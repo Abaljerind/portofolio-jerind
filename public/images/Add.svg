@@ -1,9 +1,7 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="32" height="32" fill="url(#pattern0_16_21)"/>
-<defs>
-<pattern id="pattern0_16_21" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_16_21" transform="scale(0.03125)"/>
-</pattern>
-<image id="image0_16_21" width="32" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA7AAAAOwBeShxvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALkSURBVFiFvdc/bFV1FAfwT19qX7WgkBQlkip0IYEBmZ0kTrqwE8LsxmJUjJFEY0xw0WhEAWUQWIiJgyaQgEaqq3V0EDVGE/L8m7bYOliHcy7vcnvf5b4+4JucNO/3O+d7fv3d3/k3pj024mnsw2PYjk259xd+wDwu41MsDsHdiK14JwlXK9JLqa4v4m08NIrjLo5ioUR6HgfFf9+t6G7PvfOlwy7g5YpuK0zjiyRZwuv6190GG/Lw15Pja0Pcxm78lIZfYtsQjquYwVxy/ZjcjZjG92lwEhMjOC8wgVOlQzw4SPEe/Wv/8DY4ruL95P5K6U2MlRSOigdzBU/i3wayA9hSWevhTINNF5fwOF7Di+XNreLFXtfum89bG3rzLexm8A9WsAM6ufGSeLlv4pcWRAWOpLTFz3hLvIvnisWNIm4XtA+14gY2pbS9Adhc8rehI9LrFC6IlHqn8Scuiht/qiNyO3xyF5wXKHztG8ee/DFXo3gAz9as7xywVvcZjlkbHVfy755xzIpv+GuN8ZbSAW+FyQG61XCVvlYx28H9+F2ExiAcEY+nKn+n1O01Rccy/sADRRiONSjfKdzw2cN/6kvmYWsTTlnKYThIDtfwTqbPa+O4KorQw6KrKaOHb2sIdiZJGcv4rka3V7O2TdzAVfpF4mCN4iCMkojgUNoc74gCAfuHIBgVha9LREZaTLlbqXhJpOKpTjo+LdLx8y1JCjyTMgxewH34KA+C6NeKcjzTgmS95fhRUY6XRRNrPDeu4Q3RlJwT9aGpITmmviFpQhdnRfS8Ktqzm1BuyU7fgmw9OJHccxra9HJTegb33gbHXXygRVNaYHcqFqdt8yYG4RHRhK6KJLerreE0Pk/DFbynvqoNwmYxzBSDyZx1jGkT4rGs6E9IH4ssNuvmVDyZa4dSZyltlvGKEeeLHTiuPyOW5beU6voC3pWh1oRhyvCU6B+fwN48WHU8/0aM558pJZkm/A9BWdz1jeedEQAAAABJRU5ErkJggg=="/>
-</defs>
-</svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <g id="Edit / Add_Plus_Circle"> <path id="Vector" d="M8 12H12M12 12H16M12 12V16M12 12V8M12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g> </g>
+</svg>
