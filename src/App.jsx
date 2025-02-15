@@ -1,10 +1,14 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routers/routes";
+
 function App() {
+  // kiri kanan untuk mobile 8px
+  // kiri kanan didalam navbar, ujung kiri kanannya 16px
+
   return (
-    <>
-      <h1 class="font-openSans text-3xl font-bold text-sky-300 underline">
-        Hello World
-      </h1>
-    </>
+    <div className="font-openSans p-2">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
