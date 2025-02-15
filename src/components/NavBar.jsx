@@ -10,17 +10,11 @@ export default function NavBar() {
 
   const [darkModes, setDarkModes] = useState(false);
 
-  const menuItems = [
-    { name: "Home", path: "/", icon: "../images/Home.svg" },
-    { name: "About", path: "/about", icon: "../images/User.svg" },
-    { name: "Project", path: "/project", icon: "../images/Folder.svg" },
-  ];
-
   return (
     <>
       <div className="flex h-16 items-center gap-8 rounded-lg bg-white px-4 shadow-md shadow-black/10">
         <div className="left-side w-full">
-          <NavItems menuItems={menuItems} />
+          <NavItems />
         </div>
 
         <div className="right-side w-full">
