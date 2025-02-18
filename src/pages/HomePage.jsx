@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 function HomePage() {
   return (
-    <div className="mt-2 rounded-2xl bg-white py-2 shadow-sm">
+    <>
       {/* header */}
       <div className="title-biodata flex items-center justify-between px-6 py-5">
         <div className="flex items-center justify-between">
@@ -32,9 +32,9 @@ function HomePage() {
         </div>
 
         <div className="profile my-6 flex flex-col items-center justify-center">
-          <p className="mb-4 text-3xl font-bold text-[#373737]">
+          <h1 className="mb-4 text-3xl font-bold text-[#373737]">
             I'm AbalJerind
-          </p>
+          </h1>
           <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D]">
             Frontend developer from Jakarta, ID. Currently building interfaces
             at Home.
@@ -64,7 +64,7 @@ function HomePage() {
 
       {/* footer */}
       <Footer />
-    </div>
+    </>
   );
 }
 
