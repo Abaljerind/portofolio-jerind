@@ -1,9 +1,10 @@
 import { useState } from "react";
 import NavItems from "./NavItems";
 import HireMe from "./HireMe";
-// cari cara untuk menambahkan dark mode dengan tailwindcss
-// perlu ubah seluruh style html didalam project ini untuk dark mode
-// saat di dark mode, bg color dari tag small untuk text "light mode" nya perlu diganti, cari tau warna yang dipake di tab Elements, section Styles yang bawah.
+// TODO: cari cara untuk menambahkan dark mode dengan tailwindcss
+// TODO: perlu ubah seluruh style html didalam project ini untuk dark mode
+// TODO: saat di dark mode, bg color dari tag small untuk text "light mode" nya perlu diganti, cari tau warna yang dipake di tab Elements, section Styles yang bawah.
+// TODO: tambahan, ketika discroll maka navbar ini akan bergerak mengikuti kebawah diposisi atas (fixed / sticky)
 
 export default function NavBar() {
   document.body.style.backgroundColor = "#EDEDED";
@@ -12,7 +13,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex h-16 items-center gap-8 rounded-lg bg-white pr-[10px] pl-4 shadow-md shadow-black/5">
+      <div className="flex h-16 items-center gap-8 rounded-xl bg-white pr-[10px] pl-4 shadow-md shadow-black/5">
         <div className="left-side w-full">
           <NavItems />
         </div>
