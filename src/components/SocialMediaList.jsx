@@ -1,0 +1,14 @@
+export default function SocialMediaList({ social }) {
+  return (
+    <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#EBEBEB]">
+      <a
+        className="flex h-9 w-9 items-center justify-center rounded-full border border-[#E9E9E9] bg-white"
+        href={social.href}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={social.img} alt={social.name} className="size-4" />
+      </a>
+    </div>
+  );
+}
