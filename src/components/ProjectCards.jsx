@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 export default function ProjectCards() {
   const projectList = [
     {
@@ -18,12 +20,28 @@ export default function ProjectCards() {
       tech: "HTML, TailwindCSS, Vite, React JS, NPM, JSON",
       href: "https://product-list-with-card-chi.vercel.app/",
     },
+    {
+      name: "Bookshelf Apps",
+      image: "../images/projects/bookshelf-apps.png",
+      tech: "HTML, CSS, JavaScript, JSON, Local Storage",
+      href: "https://bookshelf-apps-sable.vercel.app/",
+    },
+    {
+      name: "Todo Apps",
+      image: "../images/projects/todo-apps.png",
+      tech: "HTML, CSS, JavaScript, JSON, Local Storage",
+      href: "https://todo-apps-seven.vercel.app/",
+    },
   ];
+
+  const location = useLocation();
+  const filteredProjectList =
+    location.pathname === "/project" ? projectList : projectList.slice(0, 3);
 
   return (
     <>
       <div className="projects mt-1 flex flex-col gap-4 rounded-xl p-1.5">
-        {projectList.map((item, index) => {
+        {filteredProjectList.map((item, index) => {
           return (
             <div className="rounded-xl bg-white p-4 shadow-sm" key={index + 1}>
               <a
