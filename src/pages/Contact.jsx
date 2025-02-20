@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import GrayCircle from "../components/GrayCircle";
 import GreenCircle from "../components/GreenCircle";
 import { useEffect, useState } from "react";
+import Swal from "sweetalert2";
 
 function Contact() {
   const formSpreeID = import.meta.env.VITE_FORMSPREE_ID;
@@ -24,11 +25,19 @@ function Contact() {
 
   useEffect(() => {
     if (submitData.succeeded) {
+      Swal.fire({
+        title: "Pesan Anda berhasil dikirim!",
+        icon: "success",
+        draggable: true,
+      });
+
       setFormData({
         name: "",
         email: "",
         message: "",
       });
+
+      setSubmitData({ succeeded: false, errors: [] });
     }
   }, [submitData.succeeded]);
 
@@ -68,6 +77,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <ValidationError
               prefix="Name"
@@ -83,6 +93,7 @@ function Contact() {
               required
               value={formData.email}
               onChange={handleChange}
+              autoComplete="off"
             />
             <ValidationError
               prefix="Email"
