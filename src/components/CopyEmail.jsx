@@ -22,15 +22,15 @@ export default function CopyEmail() {
   }
 
   return (
-    <div className="flex h-12 w-[120px] items-center justify-center rounded-lg transition duration-500 hover:bg-[#EBEBEB]">
+    <div className="flex h-12 w-[120px] items-center justify-center rounded-lg transition duration-500 hover:bg-[#EBEBEB] dark:hover:bg-[#1C1C1C]">
       <button
-        className={`flex w-28 cursor-pointer items-center rounded-md border-2 border-slate-300/50 bg-white p-2 text-[13px] font-bold ${!copyText ? "text-[#444444]" : "text-[#737373]"}`}
+        className={`flex w-28 cursor-pointer items-center rounded-md border-2 border-slate-300/50 bg-white p-2 text-[13px] font-bold dark:border-slate-300/10 dark:bg-[#212121] ${!copyText ? "text-[#444444] dark:text-white" : "text-[#737373]"}`}
         onClick={copyEmail}
       >
         <img
           src="../images/Copy.svg"
           alt="copy icon"
-          className="size-4 opacity-50"
+          className="size-4 opacity-50 dark:brightness-0 dark:invert"
         />
         <span className="pl-1">{buttonText}</span>
       </button>
