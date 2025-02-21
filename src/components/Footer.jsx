@@ -22,10 +22,12 @@ export default function Footer() {
 
   return (
     <footer className="mt-12 px-2">
-      <div className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4">
+      <div className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4 dark:bg-[#2C2C2C]">
         <div className="left-side flex items-center pl-2">
           <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666]">Follow Me</p>
+          <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+            Follow Me
+          </p>
         </div>
         <div className="right-side flex items-center justify-center gap-1">
           {socialMediaList.map((social, index) => {
@@ -34,14 +36,14 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6">
-        <p className="text-center text-sm font-medium text-[#787878]">
+      <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]">
+        <p className="text-center text-sm font-medium text-[#787878] dark:text-[#C0C0C0]">
           &copy; 2025{" "}
           <a
             href="https://www.linkedin.com/in/abal-jerind-baa90519a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline"
+            className="font-semibold text-[#444444] underline dark:text-white"
           >
             AbalJerind
           </a>{" "}
@@ -50,7 +52,7 @@ export default function Footer() {
             href="https://react.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline"
+            className="font-semibold text-[#444444] underline dark:text-white"
           >
             React
           </a>{" "}
@@ -59,7 +61,7 @@ export default function Footer() {
             href="https://vite.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline"
+            className="font-semibold text-[#444444] underline dark:text-white"
           >
             Vite
           </a>
