@@ -21,7 +21,7 @@ export default function NavItems() {
               <img
                 src={nav.icon}
                 alt={`${nav.name} Icon`}
-                className={`size-7 ${location.pathname === nav.path ? "opacity-100" : "opacity-50"} transition-all duration-300 group-hover:opacity-100`}
+                className={`size-7 ${location.pathname === nav.path ? "opacity-100" : "opacity-50"} transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert`}
               />
             </Link>
           </li>
