@@ -43,7 +43,10 @@ export default function ProjectCards() {
       <div className="projects mt-1 flex flex-col gap-4 rounded-xl p-1.5">
         {filteredProjectList.map((item, index) => {
           return (
-            <div className="rounded-xl bg-white p-4 shadow-sm" key={index + 1}>
+            <div
+              className="rounded-xl bg-white p-4 shadow-sm dark:border dark:border-[#3D3D3D] dark:bg-[#373737]"
+              key={index + 1}
+            >
               <a
                 className="block"
                 href={item.href}
@@ -55,11 +58,11 @@ export default function ProjectCards() {
                   alt={item.name}
                   className="mb-3 rounded-xl"
                 />
-                <p className="cursor-pointer text-[16px] font-semibold text-[#373737]">
+                <p className="cursor-pointer text-[16px] font-semibold text-[#373737] dark:text-white">
                   {item.name}
                 </p>
               </a>
-              <small className="text-xs font-medium text-[#858585]">
+              <small className="text-xs font-medium text-[#858585] dark:text-[#C0C0C0]">
                 {item.tech}
               </small>
             </div>
