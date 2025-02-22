@@ -35,7 +35,7 @@ export default function NavBar() {
         </div>
 
         <div className="right-side w-full">
-          <ul className="flex items-center justify-between">
+          <ul className="flex items-center justify-between md:justify-end md:gap-6">
             <li
               className="group relative cursor-pointer"
               onClick={() => setDarkModes(!darkModes)}
