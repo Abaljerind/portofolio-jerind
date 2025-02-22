@@ -13,7 +13,7 @@ function HomePage() {
       <div className="title-biodata flex items-center justify-between px-6 py-5">
         <div className="flex items-center justify-between">
           <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+          <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
             Frontend Developer
           </p>
         </div>
