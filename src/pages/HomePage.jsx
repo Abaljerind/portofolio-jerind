@@ -9,39 +9,41 @@ import Footer from "../components/Footer";
 function HomePage() {
   return (
     <>
-      {/* header */}
-      <div className="title-biodata flex items-center justify-between px-6 py-5">
-        <div className="flex items-center justify-between">
-          <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
-            Frontend Developer
-          </p>
-        </div>
-        <GreenCircle />
-      </div>
-
-      <div className="biodata mt-2 md:mt-6">
-        <div className="selfie flex items-center justify-center">
-          <div className="outer-circle flex h-[165px] w-[165px] items-center justify-center rounded-full bg-[#F7F7F7] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
-            <img
-              src="../images/avataaars.png"
-              alt="avatar image"
-              className="h-36 w-36 rounded-full bg-[#D8D8DA]"
-            />
+      <div className="lg:px-2">
+        {/* header */}
+        <div className="title-biodata flex items-center justify-between px-6 py-5">
+          <div className="flex items-center justify-between">
+            <GrayCircle />
+            <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
+              Frontend Developer
+            </p>
           </div>
+          <GreenCircle />
         </div>
 
-        <div className="profile my-6 flex flex-col items-center justify-center">
-          <h1 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
-            I'm AbalJerind
-          </h1>
-          <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D] md:px-24 md:text-lg dark:text-[#A2A2A2]">
-            Frontend developer from Jakarta, ID. Currently building interfaces
-            at Home.
-          </p>
-        </div>
+        <div className="biodata mt-2 md:mt-6">
+          <div className="selfie flex items-center justify-center">
+            <div className="outer-circle flex h-[165px] w-[165px] items-center justify-center rounded-full bg-[#F7F7F7] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
+              <img
+                src="../images/avataaars.png"
+                alt="avatar image"
+                className="h-36 w-36 rounded-full bg-[#D8D8DA]"
+              />
+            </div>
+          </div>
 
-        <Buttons />
+          <div className="profile my-6 flex flex-col items-center justify-center">
+            <h1 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
+              I'm AbalJerind
+            </h1>
+            <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D] md:px-24 md:text-lg dark:text-[#A2A2A2]">
+              Frontend developer from Jakarta, ID. Currently building interfaces
+              at Home.
+            </p>
+          </div>
+
+          <Buttons />
+        </div>
       </div>
 
       {/* projects */}
