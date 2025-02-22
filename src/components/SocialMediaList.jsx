@@ -10,7 +10,7 @@ export default function SocialMediaList({ social }) {
         <img
           src={social.img}
           alt={social.name}
-          className={`size-4 dark:brightness-0 dark:invert ${social.name === "FrontendMentor" ? "dark:brightness-100 dark:invert-0" : ""} `}
+          className={`size-4 md:size-5 dark:brightness-0 dark:invert ${social.name === "FrontendMentor" ? "dark:brightness-100 dark:invert-0" : ""} `}
         />
       </a>
     </div>
