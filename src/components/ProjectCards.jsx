@@ -58,11 +58,11 @@ export default function ProjectCards() {
                   alt={item.name}
                   className="mb-3 rounded-xl"
                 />
-                <p className="cursor-pointer text-[16px] font-semibold text-[#373737] dark:text-white">
+                <p className="cursor-pointer text-[16px] font-semibold text-[#373737] md:text-lg dark:text-white">
                   {item.name}
                 </p>
               </a>
-              <small className="text-xs font-medium text-[#858585] dark:text-[#C0C0C0]">
+              <small className="text-xs font-medium text-[#858585] md:text-sm dark:text-[#C0C0C0]">
                 {item.tech}
               </small>
             </div>
