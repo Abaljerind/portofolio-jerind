@@ -22,7 +22,7 @@ function About() {
       <div className="title-about flex items-center justify-between px-6 py-5">
         <div className="flex items-center justify-between">
           <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+          <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
             About
           </p>
         </div>
@@ -30,10 +30,10 @@ function About() {
 
       {/* profile */}
       <div className="profile flex flex-col px-6">
-        <h2 className="mb-4 text-3xl font-bold text-[#373737] dark:text-white">
+        <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
           It's Me Abal
         </h2>
-        <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] dark:text-[#C0C0C0]">
+        <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
           I'm AbalJerind, a frontend web developer currently residing in
           Jakarta, Indonesia. I have a deep passion for crafting responsive,
           user-friendly and accessible web interfaces. My main goal is to bridge
@@ -41,11 +41,11 @@ function About() {
           smooth and enjoyable experience across all devices.
         </p>
 
-        <div className="relative mb-10 overflow-hidden rounded-xl bg-white p-3 drop-shadow-sm dark:bg-[#373737]">
+        <div className="relative mb-10 overflow-hidden rounded-xl bg-white p-3 drop-shadow-sm md:mx-auto md:flex md:max-w-xs md:items-center md:justify-center dark:bg-[#373737]">
           <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-20 -z-50"
+            className="absolute top-20 -z-50 md:size-64"
           >
             <path
               fill="#5B5B68"
@@ -56,13 +56,13 @@ function About() {
           <img
             src="../images/myself.png"
             alt="AbalJerind"
-            className="h-auto w-full rounded-xl"
+            className="h-auto w-full rounded-xl md:object-cover"
           />
         </div>
         <h2 className="mb-4 text-3xl font-bold text-[#373737] dark:text-white">
           More About Me
         </h2>
-        <p className="mb-5 text-justify text-[16px] leading-7 tracking-tight text-[#666666] dark:text-[#C0C0C0]">
+        <p className="mb-5 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
           AbalJerind holds a bachelor's degree in Informatics Engineering from
           Gunadarma University in Depok, Indonesia, and has a relentless drive
           to stay up-to-date with the latest web technologies and best
@@ -71,7 +71,7 @@ function About() {
           working with APIs, slicing Figma designs into pixel-perfect web
           interfaces, and ensuring cross-browser compatibility.
         </p>
-        <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] dark:text-[#C0C0C0]">
+        <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
           When he's not immersed in coding and development, he finds relaxation
           in playing video games and watching movies, both of which inspire his
           creativity and problem-solving skills. He firmly believes in
@@ -87,7 +87,7 @@ function About() {
         <h2 className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white">
           My Skills
         </h2>
-        <p className="mb-5 px-4 text-justify text-[16px] leading-7 tracking-tight text-[#666666] dark:text-[#C0C0C0]">
+        <p className="mb-5 px-4 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
           I continuously refine my skills through hands-on practice and
           real-world challenges. Take a look — I hope you’ll find them
           impressive!
