@@ -32,10 +32,10 @@ function HomePage() {
         </div>
 
         <div className="profile my-6 flex flex-col items-center justify-center">
-          <h1 className="mb-4 text-3xl font-bold text-[#373737] dark:text-white">
+          <h1 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
             I'm AbalJerind
           </h1>
-          <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D] dark:text-[#A2A2A2]">
+          <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D] md:px-24 md:text-lg dark:text-[#A2A2A2]">
             Frontend developer from Jakarta, ID. Currently building interfaces
             at Home.
           </p>
@@ -50,7 +50,7 @@ function HomePage() {
           <div className="title-project flex justify-between">
             <div className="flex items-center justify-center pl-2">
               <GrayCircle />
-              <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+              <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
                 Projects
               </p>
             </div>
