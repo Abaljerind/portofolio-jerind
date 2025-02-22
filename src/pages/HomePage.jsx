@@ -43,7 +43,7 @@ function HomePage() {
               </p>
             </div>
 
-            <div className="lg:-ml-2">
+            <div className="lg:-mt-3 lg:-ml-2">
               <Buttons />
             </div>
           </div>
