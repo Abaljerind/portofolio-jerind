@@ -6,7 +6,7 @@ function App() {
   // kiri kanan didalam navbar, ujung kiri kanannya 16px
 
   return (
-    <div className="font-openSans p-2 md:mx-auto md:max-w-[560px]">
+    <div className="font-openSans p-2 md:mx-auto md:w-full md:max-w-[576px]">
       <RouterProvider router={router} />
     </div>
   );
