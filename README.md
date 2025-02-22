@@ -60,19 +60,15 @@ yarn preview
 ### Screenshot
 
 - Desktop version
-  <!-- <img src="./public/screenshots/screenshot-selected-desktop.png" alt="Desktop version" width="600"/> -->
-
-  <!-- <img src="./public/screenshots/screenshot-order-confirmation-desktop.png" alt="Desktop version" width="600"/> -->
+  <img src="./public/screenshots/screenshot-desktop.png" alt="Desktop version" width="600"/>
 
 - Mobile version
-  <!-- <img src="./public/screenshots/screenshot-selected-mobile.png" alt="Mobile version" height="600"/> -->
-
-  <!-- <img src="./public/screenshots/screenshot-order-confirmation-mobile.png" alt="Mobile version" width="300"/> -->
+  <img src="./public/screenshots/screenshot-mobile.png" alt="Mobile version" height="600"/>
 
 ### Links
 
 - Solution URL: [Github](https://github.com/Abaljerind/portofolio-jerind)
-- Live Site URL: [Live Site](no available)
+- Live Site URL: [Live Site](https://portofolio-jerind.vercel.app/)
 
 ## My process
 
