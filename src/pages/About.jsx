@@ -87,7 +87,7 @@ function About() {
         <h2 className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white">
           My Skills
         </h2>
-        <p className="mb-5 px-4 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+        <p className="mb-5 px-4 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg lg:mb-7 dark:text-[#C0C0C0]">
           I continuously refine my skills through hands-on practice and
           real-world challenges. Take a look — I hope you’ll find them
           impressive!
