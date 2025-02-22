@@ -7,7 +7,7 @@ export default function GreenCircle() {
       </div>
 
       {/* Teks (Hanya Muncul di Layar ≥ 1024px) */}
-      <span className="hidden text-xs font-bold text-[#039754] lg:inline lg:tracking-wide dark:text-[#DFF7EC]">
+      <span className="hidden text-xs font-bold text-[#039754] lg:inline lg:tracking-wide dark:text-[#DFF7EC] lg:dark:text-[#0D7B49] lg:dark:brightness-125">
         AVAILABLE FOR WORK
       </span>
     </div>
