@@ -46,7 +46,7 @@ function Contact() {
       <div className="title-contact flex items-center justify-between px-6 py-5">
         <div className="flex items-center justify-between">
           <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+          <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
             Hire Me
           </p>
         </div>
@@ -54,10 +54,10 @@ function Contact() {
       </div>
 
       <div className="intro-contacts mt-4 flex flex-col px-6">
-        <h2 className="mb-4 text-3xl font-bold text-[#373737] dark:text-white">
+        <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
           Frontend Request
         </h2>
-        <p className="mb-8 text-justify text-[16px] leading-7 tracking-tight text-[#666666] dark:text-[#C0C0C0]">
+        <p className="mb-8 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
           Have an idea and need a developer to bring your design to life? Reach
           out now
         </p>
@@ -75,7 +75,7 @@ function Contact() {
               name="name"
               id="name"
               placeholder="Name"
-              className="w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 dark:bg-[#2C2C2C]"
+              className="w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 md:p-4 dark:bg-[#2C2C2C]"
               value={formData.name}
               onChange={handleChange}
               required
