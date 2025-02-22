@@ -20,7 +20,7 @@ function HomePage() {
         <GreenCircle />
       </div>
 
-      <div className="biodata mt-2">
+      <div className="biodata mt-2 md:mt-6">
         <div className="selfie flex items-center justify-center">
           <div className="outer-circle flex h-[165px] w-[165px] items-center justify-center rounded-full bg-[#F7F7F7] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
             <img
