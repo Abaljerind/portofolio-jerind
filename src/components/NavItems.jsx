@@ -10,7 +10,7 @@ export default function NavItems() {
   ];
 
   return (
-    <ul className="flex justify-between">
+    <ul className="flex justify-between md:justify-start md:gap-6">
       {menuItems.map((nav, index) => {
         return (
           <li className="group relative cursor-pointer" key={index + 1}>
