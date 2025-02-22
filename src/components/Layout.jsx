@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <>
       <NavBar />
-      <div className="mt-2 rounded-2xl bg-white py-2 shadow-sm dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
+      <div className="mt-2 rounded-2xl bg-white py-2 shadow-sm lg:mt-4 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
         <Outlet />
       </div>
     </>
