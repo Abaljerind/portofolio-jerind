@@ -30,7 +30,7 @@ function About() {
 
       {/* profile */}
       <div className="profile flex flex-col px-6">
-        <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
+        <h2 className="mb-4 text-3xl font-bold text-[#373737] md:mt-4 md:mb-6 md:text-4xl dark:text-white">
           It's Me Abal
         </h2>
         <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
