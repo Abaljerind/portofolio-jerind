@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex h-16 items-center gap-8 rounded-xl bg-white pr-[10px] pl-4 shadow-md shadow-black/5 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
+      <div className="flex h-16 items-center gap-8 rounded-xl bg-white pr-[10px] pl-4 shadow-md shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
         <div className="left-side w-full">
           <NavItems />
         </div>
