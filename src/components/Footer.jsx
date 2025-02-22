@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4 dark:bg-[#2C2C2C]">
         <div className="left-side flex items-center pl-2">
           <GrayCircle />
-          <p className="text-lg font-semibold text-[#666666] dark:text-[#C0C0C0]">
+          <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
             Follow Me
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
 
       <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]">
-        <p className="text-center text-sm font-medium text-[#787878] dark:text-[#C0C0C0]">
+        <p className="text-center text-sm font-medium text-[#787878] md:text-[16px] dark:text-[#C0C0C0]">
           &copy; 2025{" "}
           <a
             href="https://www.linkedin.com/in/abal-jerind-baa90519a/"
