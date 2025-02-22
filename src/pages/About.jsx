@@ -34,7 +34,7 @@ function About() {
           <h2 className="mb-4 text-3xl font-bold text-[#373737] md:mt-4 md:mb-6 md:text-4xl dark:text-white">
             It's Me Abal
           </h2>
-          <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+          <p className="mb-10 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
             I'm AbalJerind, a frontend web developer currently residing in
             Jakarta, Indonesia. I have a deep passion for crafting responsive,
             user-friendly and accessible web interfaces. My main goal is to
@@ -63,7 +63,7 @@ function About() {
           <h2 className="mb-4 text-3xl font-bold text-[#373737] dark:text-white">
             More About Me
           </h2>
-          <p className="mb-5 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+          <p className="mb-5 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
             AbalJerind holds a bachelor's degree in Informatics Engineering from
             Gunadarma University in Depok, Indonesia, and has a relentless drive
             to stay up-to-date with the latest web technologies and best
@@ -72,7 +72,7 @@ function About() {
             includes working with APIs, slicing Figma designs into pixel-perfect
             web interfaces, and ensuring cross-browser compatibility.
           </p>
-          <p className="mb-10 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+          <p className="mb-10 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
             When he's not immersed in coding and development, he finds
             relaxation in playing video games and watching movies, both of which
             inspire his creativity and problem-solving skills. He firmly
@@ -88,7 +88,7 @@ function About() {
           <h2 className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white">
             My Skills
           </h2>
-          <p className="mb-5 px-4 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg lg:mb-7 dark:text-[#C0C0C0]">
+          <p className="mb-5 px-4 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg lg:mb-7 dark:text-[#C0C0C0]">
             I continuously refine my skills through hands-on practice and
             real-world challenges. Take a look — I hope you’ll find them
             impressive!

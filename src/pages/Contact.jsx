@@ -58,7 +58,7 @@ function Contact() {
           <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
             Frontend Request
           </h2>
-          <p className="mb-8 text-justify text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+          <p className="mb-8 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
             Have an idea and need a developer to bring your design to life?
             Reach out now
           </p>
