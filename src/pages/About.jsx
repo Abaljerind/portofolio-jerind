@@ -18,9 +18,9 @@ function About() {
 
   return (
     <>
-      <div className="lg:px-2">
+      <div className="px-2">
         {/* header */}
-        <div className="title-about flex items-center justify-between px-6 py-5">
+        <div className="title-about flex items-center justify-between px-4 py-5 lg:px-6">
           <div className="flex items-center justify-between">
             <GrayCircle />
             <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
@@ -30,7 +30,7 @@ function About() {
         </div>
 
         {/* profile */}
-        <div className="profile flex flex-col px-6">
+        <div className="profile flex flex-col px-4 lg:px-6">
           <h2 className="mb-4 text-3xl font-bold text-[#373737] md:mt-4 md:mb-6 md:text-4xl dark:text-white">
             It's Me Abal
           </h2>
@@ -84,7 +84,7 @@ function About() {
           </p>
         </div>
 
-        <div className="skills px-2">
+        <div className="skills lg:px-2">
           <h2 className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white">
             My Skills
           </h2>
