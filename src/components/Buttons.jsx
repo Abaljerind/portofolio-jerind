@@ -3,7 +3,7 @@ import HireMe from "./HireMe";
 
 export default function Buttons() {
   return (
-    <div className="buttons flex items-center justify-center gap-1 md:gap-2">
+    <div className="buttons flex items-center justify-center gap-1 md:gap-2 lg:gap-1">
       <HireMe />
       <CopyEmail />
     </div>
