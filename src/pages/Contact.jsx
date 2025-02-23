@@ -54,7 +54,7 @@ function Contact() {
           <GreenCircle />
         </div>
 
-        <div className="intro-contacts mt-4 flex flex-col px-6">
+        <div className="intro-contacts flex flex-col px-6 md:mt-4">
           <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
             Frontend Request
           </h2>
