@@ -76,7 +76,7 @@ function Contact() {
                 name="name"
                 id="name"
                 placeholder="Name"
-                className="w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 md:p-4 dark:bg-[#2C2C2C]"
+                className="w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 md:p-4 dark:bg-[#2C2C2C] dark:text-[#fcfcfc]"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -92,7 +92,7 @@ function Contact() {
                 name="email"
                 id="email"
                 placeholder="Email Address"
-                className="font-mediumplaceholder:font-medium w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm text-[#515151] placeholder:text-sm placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 dark:bg-[#2C2C2C]"
+                className="font-mediumplaceholder:font-medium w-[50%] rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm text-[#515151] placeholder:text-sm placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 dark:bg-[#2C2C2C] dark:text-[#fcfcfc]"
                 required
                 value={formData.email}
                 onChange={handleChange}
@@ -108,7 +108,7 @@ function Contact() {
               name="message"
               id="message"
               placeholder="Message"
-              className="h-36 rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 dark:bg-[#2C2C2C]"
+              className="h-36 rounded-lg border border-[#2c2c2c]/10 bg-[#F7F7F7] p-3 text-sm font-medium text-[#515151] placeholder:text-sm placeholder:font-medium placeholder:text-[#A0A0A0] focus:border-[#2c2c2c]/50 focus:ring-0 focus:outline-0 dark:bg-[#2C2C2C] dark:text-[#fcfcfc]"
               required
               value={formData.message}
               onChange={handleChange}
