@@ -9,16 +9,22 @@ export default function ProjectCards() {
       href: "https://contact-form-main-omega.vercel.app/",
     },
     {
-      name: "Advice Generator",
-      image: "../images/projects/advice-generator.jpg",
-      tech: "HTML, TailwindCSS, Vite, React JS, NPM, API",
-      href: "https://advice-generator-app-chi-six.vercel.app/",
+      name: "NFT Marketplace Design",
+      image: "../images/projects/cryptobase.png",
+      tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, API, Firebase",
+      href: "https://cryptobase-010325.web.app/",
     },
     {
       name: "Product List with Cart",
       image: "../images/projects/product-list-cart.jpg",
       tech: "HTML, TailwindCSS, Vite, React JS, NPM, JSON",
       href: "https://product-list-with-card-chi.vercel.app/",
+    },
+    {
+      name: "Advice Generator",
+      image: "../images/projects/advice-generator.jpg",
+      tech: "HTML, TailwindCSS, Vite, React JS, NPM, API",
+      href: "https://advice-generator-app-chi-six.vercel.app/",
     },
     {
       name: "Bookshelf Apps",
