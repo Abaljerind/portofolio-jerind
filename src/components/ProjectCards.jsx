@@ -3,15 +3,15 @@ import { useLocation } from "react-router-dom";
 export default function ProjectCards() {
   const projectList = [
     {
-      name: "Contact Form",
-      image: "../images/projects/contact-form.jpg",
-      tech: "HTML, TailwindCSS, JavaScript, NPM",
-      href: "https://contact-form-main-omega.vercel.app/",
+      name: "Rest Countries API",
+      image: "../images/projects/rest-countries-api.png",
+      tech: "HTML, TailwindCSS, JavaScript, NPM, REST API, React JS, Vite, React Context, React Router",
+      href: "https://rest-countries-api-three-neon.vercel.app/",
     },
     {
       name: "NFT Marketplace Design",
       image: "../images/projects/cryptobase.png",
-      tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, API, Firebase",
+      tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, REST API, Firebase",
       href: "https://cryptobase-010325.web.app/",
     },
     {
@@ -23,7 +23,7 @@ export default function ProjectCards() {
     {
       name: "Advice Generator",
       image: "../images/projects/advice-generator.jpg",
-      tech: "HTML, TailwindCSS, Vite, React JS, NPM, API",
+      tech: "HTML, TailwindCSS, Vite, React JS, NPM, REST API",
       href: "https://advice-generator-app-chi-six.vercel.app/",
     },
     {
