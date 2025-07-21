@@ -12,6 +12,9 @@ function About() {
     "React JS",
     "Vite",
     "NPM",
+    "Rest API",
+    "React Router",
+    "Linux Basic",
     "Git & Github",
     "Figma",
   ];
