@@ -1,12 +1,15 @@
+import { GoHome } from "react-icons/go";
+import { PiUser } from "react-icons/pi";
+import { RiCodeBoxFill } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 
 export default function NavItems() {
   const location = useLocation();
 
   const menuItems = [
-    { name: "Home", path: "/", icon: "../images/Home.svg" },
-    { name: "About", path: "/about", icon: "../images/User.svg" },
-    { name: "Project", path: "/project", icon: "../images/Folder.svg" },
+    { name: "Home", path: "/", icon: <GoHome /> },
+    { name: "About", path: "/about", icon: <PiUser /> },
+    { name: "Project", path: "/project", icon: <RiCodeBoxFill /> },
   ];
 
   return (
@@ -18,11 +21,11 @@ export default function NavItems() {
               <small className="absolute -top-6 left-[50%] w-fit -translate-x-[50%] rounded-full bg-[#373737] px-2 py-0.5 text-center text-xs text-white opacity-0 transition-all delay-200 duration-300 group-hover:opacity-100">
                 {nav.name}
               </small>
-              <img
-                src={nav.icon}
-                alt={`${nav.name} Icon`}
-                className={`size-7 ${location.pathname === nav.path ? "opacity-100" : "opacity-50"} transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert`}
-              />
+              <span
+                className={`text-3xl ${location.pathname === nav.path ? "opacity-100" : "opacity-50"} transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert`}
+              >
+                {nav.icon}
+              </span>
             </Link>
           </li>
         );
