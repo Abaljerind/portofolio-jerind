@@ -2,11 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function ViewAll() {
   return (
-    <Link
-      to={"/project"}
-      className="flex h-[46px] w-[104px] max-w-[108px] items-center justify-center rounded-lg transition duration-500 hover:bg-[#EBEBEB] dark:hover:bg-[#1C1C1C]"
-    >
-      <button className="flex w-full scale-90 cursor-pointer items-center justify-between rounded-lg border-2 border-[#EBEBEB] bg-white p-2.5 md:text-lg dark:border-none dark:bg-[#373737]">
+    <Link to={"/project"}>
+      <button className="flex w-full scale-90 cursor-pointer items-center justify-between rounded-lg border-2 border-[#EBEBEB] bg-white p-2.5 duration-300 hover:shadow-lg md:text-lg dark:border-none dark:bg-[#373737]">
         <span className="text-sm font-bold text-[#373737] dark:text-white">
           View All
         </span>
