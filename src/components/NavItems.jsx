@@ -1,5 +1,5 @@
 import { GoHome } from "react-icons/go";
-import { PiUser } from "react-icons/pi";
+import { PiCertificate, PiUser } from "react-icons/pi";
 import { RiCodeBoxFill } from "react-icons/ri";
 import { Link, useLocation } from "react-router-dom";
 
@@ -10,6 +10,7 @@ export default function NavItems() {
     { name: "Home", path: "/", icon: <GoHome /> },
     { name: "About", path: "/about", icon: <PiUser /> },
     { name: "Project", path: "/project", icon: <RiCodeBoxFill /> },
+    { name: "Certificate", path: "/certificate", icon: <PiCertificate /> },
   ];
 
   return (
