@@ -29,13 +29,13 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="flex h-16 items-center gap-8 rounded-xl bg-white pr-[10px] pl-4 shadow-md shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
+      <div className="flex h-16 items-center gap-1 rounded-xl bg-white pr-[10px] pl-4 shadow-md shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
         <div className="left-side w-full">
           <NavItems />
         </div>
 
         <div className="right-side w-full">
-          <ul className="flex items-center justify-between md:justify-end md:gap-6">
+          <ul className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8">
             <li
               className="group relative cursor-pointer"
               onClick={() => setDarkModes(!darkModes)}
