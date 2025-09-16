@@ -35,11 +35,17 @@ function About() {
         {/* profile */}
         <div className="profile mt-2 flex flex-col px-4 lg:px-6">
           <div className="mb-10 flex flex-col items-center gap-1.5">
-            <img
-              src="../images/myself.png"
-              alt="AbalJerind"
-              className="mb-4 h-40 w-40 rounded-full bg-[#666666] object-contain"
-            />
+            {/* image */}
+            <div className="selfie mb-1.5 flex items-center justify-center md:mb-2">
+              <div className="outer-circle flex h-[185px] w-[185px] items-center justify-center rounded-full bg-[#F7F7F7] md:h-[230px] md:w-[230px] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
+                <img
+                  src="../images/myself.png"
+                  alt="avatar image"
+                  className="h-40 w-40 rounded-full bg-[#D8D8DA] object-contain md:h-52 md:w-52"
+                />
+              </div>
+            </div>
+            {/* ./ image */}
             <h1 className="text-3xl font-bold text-[#373737] dark:text-white">
               AbalJerind
             </h1>
