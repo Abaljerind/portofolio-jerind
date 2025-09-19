@@ -43,7 +43,7 @@ export default function Footer() {
             href="https://www.linkedin.com/in/abal-jerind-baa90519a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline dark:text-white"
+            className="font-semibold text-[#444444] underline duration-300 hover:text-sky-400 dark:text-white"
           >
             AbalJerind
           </a>{" "}
@@ -52,7 +52,7 @@ export default function Footer() {
             href="https://react.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline dark:text-white"
+            className="font-semibold text-[#444444] underline duration-300 hover:text-sky-400 dark:text-white"
           >
             React
           </a>{" "}
@@ -61,7 +61,7 @@ export default function Footer() {
             href="https://vite.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-[#444444] underline dark:text-white"
+            className="font-semibold text-[#444444] underline duration-300 hover:text-sky-400 dark:text-white"
           >
             Vite
           </a>
