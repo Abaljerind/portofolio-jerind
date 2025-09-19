@@ -1,22 +1,80 @@
+import {
+  IoLogoCss3,
+  IoLogoHtml5,
+  IoLogoJavascript,
+  IoLogoNpm,
+} from "react-icons/io5";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import GrayCircle from "../components/GrayCircle";
 import MySkills from "../components/MySkills";
+import { SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
+import { RiReactjsFill } from "react-icons/ri";
+import { FaFire } from "react-icons/fa";
+import { FaFigma, FaGithub, FaLinux } from "react-icons/fa6";
 
 function About() {
   const skillList = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Tailwind CSS",
-    "React JS",
-    "Vite",
-    "NPM",
-    "Rest API",
-    "React Router",
-    "Linux Basic",
-    "Git & Github",
-    "Figma",
+    {
+      skill: "HTML",
+      icon: <IoLogoHtml5 />,
+      color: "#E34F26",
+    },
+    {
+      skill: "CSS",
+      icon: <IoLogoCss3 />,
+      color: "#1572B6",
+    },
+    {
+      skill: "JavaScript",
+      icon: <IoLogoJavascript />,
+      color: "#F7DF1E",
+    },
+    {
+      skill: "Tailwind CSS",
+      icon: <SiTailwindcss />,
+      color: "#38B2AC",
+    },
+    {
+      skill: "React JS",
+      icon: <RiReactjsFill />,
+      color: "#61DAFB",
+    },
+    {
+      skill: "Vite",
+      icon: <SiVite />,
+      color: "#646CFF",
+    },
+    {
+      skill: "NPM",
+      icon: <IoLogoNpm />,
+      color: "#CB3837",
+    },
+    {
+      skill: "Rest API",
+      icon: <FaFire />,
+      color: "#E34F26",
+    },
+    {
+      skill: "React Router",
+      icon: <SiReactrouter />,
+      color: "#CA4245",
+    },
+    {
+      skill: "Linux Basic",
+      icon: <FaLinux />,
+      color: "#FCC624",
+    },
+    {
+      skill: "Git & Github",
+      icon: <FaGithub />,
+      color: "#181717",
+    },
+    {
+      skill: "Figma",
+      icon: <FaFigma />,
+      color: "#F24E1E",
+    },
   ];
 
   return (
@@ -87,8 +145,15 @@ function About() {
         </div>
 
         <div className="flex flex-wrap gap-2 rounded-xl bg-[#F7F7F7] p-4 dark:bg-[#2C2C2C]">
-          {skillList.map((skill, index) => {
-            return <MySkills key={index + 1} skill={skill} />;
+          {skillList.map((item, index) => {
+            return (
+              <MySkills
+                key={index + 1}
+                skill={item.skill}
+                icon={item.icon}
+                color={item.color}
+              />
+            );
           })}
         </div>
       </div>
