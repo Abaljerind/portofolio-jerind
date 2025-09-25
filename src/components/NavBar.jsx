@@ -13,7 +13,6 @@ export default function NavBar() {
 
   // State untuk menyimpan mode gelap (true = dark, false = light)
   const [darkModes, setDarkModes] = useState(getInitialTheme);
-  const [scrolled, setScrolled] = useState(false); // untuk mengaktifkan efek saat di scroll
 
   // useEffect: Tambahkan/hapus kelas "dark" ke elemen <html>
   useEffect(() => {
