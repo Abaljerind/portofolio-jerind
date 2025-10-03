@@ -23,7 +23,7 @@ export default function NavItems() {
                 {nav.name}
               </small>
               <span
-                className={`text-3xl ${location.pathname === nav.path ? "opacity-100" : "opacity-50"} transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert`}
+                className={`text-3xl ${location.pathname === nav.path ? "text-[#373737] opacity-100 dark:text-white" : "text-[#373737] opacity-50 dark:text-white"} transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert`}
               >
                 {nav.icon}
               </span>
