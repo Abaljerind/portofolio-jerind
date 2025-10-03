@@ -105,13 +105,13 @@ const Certificate = () => {
             aria-label="Certification categories"
           >
             <button
-              className={`flex-1 p-3 text-center ${activeTab === "web" ? "font-semibold text-[#666666] transition-all duration-300 dark:text-[#c0c0c0]" : "text-gray-500/80"} cursor-pointer`}
+              className={`flex-1 p-3 text-center ${activeTab === "web" ? "font-semibold text-[#373737] transition-all duration-300 dark:text-white" : "text-[#666]"} cursor-pointer`}
               onClick={() => setActiveTab("web")}
             >
               Web Development
             </button>
             <button
-              className={`flex-1 p-3 text-center ${activeTab === "uiux" ? "font-semibold text-[#666] transition-all duration-300 dark:text-[#c0c0c0]" : "text-gray-500/80"} cursor-pointer`}
+              className={`flex-1 p-3 text-center ${activeTab === "uiux" ? "font-semibold text-[#373737] transition-all duration-300 dark:text-white" : "text-[#666]"} cursor-pointer`}
               onClick={() => setActiveTab("uiux")}
             >
               UI/UX Design
@@ -128,18 +128,18 @@ const Certificate = () => {
                   key={idx + 1}
                 >
                   <div className="flex flex-col gap-0.5">
-                    <h3 className="text-sm font-medium text-[#666] dark:text-[#c0c0c0]">
+                    <h3 className="text-sm font-medium text-[#373737] dark:text-white">
                       {cert.title}
                     </h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-200">
+                    <p className="text-sm text-[#666666] dark:text-[#c0c0c0]">
                       {cert.issued}
                     </p>
-                    <p className="text-sm text-gray-500 dark:text-gray-200">
+                    <p className="text-sm text-[#666666] dark:text-[#c0c0c0]">
                       {cert.provider}
                     </p>
                   </div>
                   <button
-                    className="cursor-pointer rounded-md bg-white p-2 text-xs font-medium text-gray-500 shadow-sm dark:bg-[#494848] dark:text-gray-200"
+                    className="cursor-pointer rounded-md bg-white p-2 text-xs font-medium text-[#666] shadow-sm dark:bg-[#494848] dark:text-white"
                     onClick={() => setSelectedCert(cert)}
                   >
                     View Credential
@@ -163,7 +163,10 @@ const Certificate = () => {
                 <div className="mb-4 flex items-center justify-between">
                   <div className="flex items-center justify-between gap-4">
                     <PiMedalLight className="text-2xl text-violet-600" />
-                    <h2 id="cert-title" className="font-semibold">
+                    <h2
+                      id="cert-title"
+                      className="font-semibold text-[#373737]"
+                    >
                       {selectedCert.title}
                     </h2>
                   </div>
@@ -185,7 +188,7 @@ const Certificate = () => {
                     className="w-full rounded-lg border-8 border-gray-800"
                   />
 
-                  <figcaption className="mt-4 space-y-0.5 text-center">
+                  <figcaption className="mt-4 space-y-0.5 text-center text-[#666666]">
                     <p>
                       Issued by{" "}
                       <span className="font-semibold">
