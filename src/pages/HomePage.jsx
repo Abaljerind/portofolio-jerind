@@ -25,7 +25,7 @@ function HomePage() {
           <div className="selfie flex items-center justify-center lg:pr-6">
             <div className="outer-circle flex h-[165px] w-[165px] items-center justify-center rounded-full bg-[#F7F7F7] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
               <img
-                src="../images/avataaars.png"
+                src="../images/avataaars.webp"
                 alt="avatar image"
                 className="h-36 w-36 rounded-full bg-[#D8D8DA]"
               />
