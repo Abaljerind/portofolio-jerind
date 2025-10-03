@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import NavItems from "./NavItems";
 import HireMe from "./HireMe";
+import { IoSunnyOutline } from "react-icons/io5";
+import { FaCloudMoon } from "react-icons/fa";
 
 export default function NavBar() {
   // Cek preferensi mode gelap dari localStorage atau OS
@@ -43,11 +45,11 @@ export default function NavBar() {
               <small className="absolute -top-6 left-[50%] w-20 -translate-x-[50%] rounded-full bg-[#373737] px-1 py-0.5 text-center text-xs text-white opacity-0 transition-all delay-200 duration-300 group-hover:opacity-100">
                 {darkModes ? "Light Mode" : "Dark Mode"}
               </small>
-              <img
-                src={darkModes ? "../images/Sun.svg" : "../images/Moon.svg"}
-                alt={darkModes ? "Dark Mode" : "Light Mode"}
-                className="size-7 opacity-50 transition-all duration-300 group-hover:opacity-100 dark:brightness-0 dark:invert"
-              />
+              {darkModes ? (
+                <IoSunnyOutline className="text-3xl text-[#373737] opacity-50 transition-all duration-300 group-hover:opacity-100 dark:text-white" />
+              ) : (
+                <FaCloudMoon className="text-3xl text-[#373737] opacity-50 transition-all duration-300 group-hover:opacity-100 dark:text-white" />
+              )}
             </li>
             <li>
               <HireMe />
