@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return (
     <>
-      <div className="sticky top-0 z-10 flex h-16 items-center gap-1 rounded-xl bg-white/75 pr-[10px] pl-4 shadow-lg shadow-black/5 backdrop-blur-md lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]/75">
+      <div className="flex h-16 items-center gap-1 rounded-xl bg-white/75 pr-[10px] pl-4 shadow-lg shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]/75">
         <div className="left-side w-full">
           <NavItems />
         </div>
