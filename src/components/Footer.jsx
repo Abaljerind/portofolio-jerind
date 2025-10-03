@@ -1,22 +1,27 @@
+import { SiFrontendmentor } from "react-icons/si";
 import GrayCircle from "./GrayCircle";
 import SocialMediaList from "./SocialMediaList";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Footer() {
   const socialMediaList = [
     {
       name: "FrontendMentor",
-      img: "../images/frontendmentor.png",
+      img: <SiFrontendmentor />,
       href: "https://www.frontendmentor.io/profile/Abaljerind",
+      color: "#3F54A3",
     },
     {
       name: "LinkedIn",
-      img: "../images/Linkedin.svg",
+      img: <FaLinkedinIn />,
       href: "https://www.linkedin.com/in/abal-jerind-baa90519a/",
+      color: "#0A66C2",
     },
     {
       name: "Github",
-      img: "../images/Github.svg",
+      img: <FaGithub />,
       href: "https://github.com/Abaljerind",
+      color: "#181717",
     },
   ];
 
@@ -31,7 +36,13 @@ export default function Footer() {
         </div>
         <div className="right-side flex items-center justify-center gap-1">
           {socialMediaList.map((social, index) => {
-            return <SocialMediaList social={social} key={index + 1} />;
+            return (
+              <SocialMediaList
+                social={social}
+                color={social.color}
+                key={index + 1}
+              />
+            );
           })}
         </div>
       </div>
