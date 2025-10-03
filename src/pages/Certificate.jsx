@@ -158,7 +158,7 @@ const Certificate = () => {
               aria-modal="true"
               aria-labelledby="cert-title"
             >
-              <div className="w-[90%] max-w-3xl space-y-4 rounded-lg bg-white/90 p-6">
+              <div className="w-[90%] max-w-3xl space-y-4 rounded-lg bg-white p-6">
                 {/* title & close button */}
                 <div className="mb-4 flex items-center justify-between">
                   <div className="flex items-center justify-between gap-4">
