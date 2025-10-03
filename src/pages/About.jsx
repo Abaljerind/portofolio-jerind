@@ -97,8 +97,8 @@ function About() {
             <div className="selfie mb-1.5 flex items-center justify-center md:mb-2">
               <div className="outer-circle flex h-[185px] w-[185px] items-center justify-center rounded-full bg-[#F7F7F7] md:h-[230px] md:w-[230px] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
                 <img
-                  src="../images/myself.png"
-                  alt="avatar image"
+                  src="../images/myself.webp"
+                  alt="myself"
                   className="h-40 w-40 rounded-full bg-[#D8D8DA] object-contain md:h-52 md:w-52"
                 />
               </div>
