@@ -4,37 +4,37 @@ export default function ProjectCards() {
   const projectList = [
     {
       name: "Rest Countries API",
-      image: "../images/projects/rest-countries-api.png",
+      image: "../images/projects/rest-countries-api.webp",
       tech: "HTML, TailwindCSS, JavaScript, NPM, REST API, React JS, Vite, React Context, React Router",
       href: "https://rest-countries-api-three-neon.vercel.app/",
     },
     {
       name: "NFT Marketplace Design",
-      image: "../images/projects/cryptobase.png",
+      image: "../images/projects/cryptobase.webp",
       tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, REST API, Firebase",
       href: "https://cryptobase-010325.web.app/",
     },
     {
       name: "Product List with Cart",
-      image: "../images/projects/product-list-cart.jpg",
+      image: "../images/projects/product-list-cart.webp",
       tech: "HTML, TailwindCSS, Vite, React JS, NPM, JSON",
       href: "https://product-list-with-card-chi.vercel.app/",
     },
     {
       name: "Advice Generator",
-      image: "../images/projects/advice-generator.jpg",
+      image: "../images/projects/advice-generator.webp",
       tech: "HTML, TailwindCSS, Vite, React JS, NPM, REST API",
       href: "https://advice-generator-app-chi-six.vercel.app/",
     },
     {
       name: "Bookshelf Apps",
-      image: "../images/projects/bookshelf-apps.png",
+      image: "../images/projects/bookshelf-apps.webp",
       tech: "HTML, CSS, JavaScript, JSON, Local Storage",
       href: "https://bookshelf-apps-sable.vercel.app/",
     },
     {
       name: "Todo Apps",
-      image: "../images/projects/todo-apps.png",
+      image: "../images/projects/todo-apps.webp",
       tech: "HTML, CSS, JavaScript, JSON, Local Storage",
       href: "https://todo-apps-seven.vercel.app/",
     },
