@@ -139,7 +139,7 @@ const Certificate = () => {
                     </p>
                   </div>
                   <button
-                    className="cursor-pointer rounded-md bg-white p-2 text-xs font-medium text-[#666] shadow-sm dark:bg-[#494848] dark:text-white"
+                    className="cursor-pointer rounded-md bg-white p-2 text-xs font-medium text-[#666] shadow-sm duration-300 hover:shadow-lg dark:bg-[#494848] dark:text-white"
                     onClick={() => setSelectedCert(cert)}
                   >
                     View Credential
