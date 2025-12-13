@@ -5,7 +5,7 @@ import GrayCircle from "../components/GrayCircle";
 import { IoClose } from "react-icons/io5";
 import { PiMedalLight } from "react-icons/pi";
 
-const Certificate = () => {
+const MyCertificate = () => {
   const [activeTab, setActiveTab] = useState("web");
   const [selectedCert, setSelectedCert] = useState(null);
 
@@ -217,4 +217,4 @@ const Certificate = () => {
   );
 };
 
-export default Certificate;
+export default MyCertificate;
