@@ -4,7 +4,7 @@ import HomePage from "../pages/HomePage";
 import About from "../pages/About";
 import Project from "../pages/Project";
 import Contact from "../pages/Contact";
-import Certificate from "../pages/Certificate";
+import Certificate from "../pages/Certificate.jsx";
 
 export const router = createBrowserRouter([
   {
