@@ -21,7 +21,7 @@ function HomePage() {
           <GreenCircle />
         </div>
 
-        <div className="biodata mt-2 md:mt-6 lg:-mt-[10px] lg:flex lg:flex-row-reverse lg:items-center lg:justify-center">
+        <div className="biodata mt-2 md:mt-6 lg:-mt-2.5 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center">
           <div className="selfie flex items-center justify-center lg:pr-6">
             <div className="outer-circle flex h-[165px] w-[165px] items-center justify-center rounded-full bg-[#F7F7F7] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
               <img
@@ -37,7 +37,7 @@ function HomePage() {
               <h1 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
                 I'm AbalJerind
               </h1>
-              <p className="px-3 text-center text-[16px] leading-7 font-medium break-words text-[#6D6D6D] md:px-24 md:text-lg lg:px-0 lg:text-start dark:text-[#A2A2A2]">
+              <p className="px-3 text-center text-[16px] leading-7 font-medium wrap-break-word text-[#6D6D6D] md:px-24 md:text-lg lg:px-0 lg:text-start dark:text-[#A2A2A2]">
                 Frontend developer from Jakarta, ID. Currently building
                 interfaces at Home.
               </p>
