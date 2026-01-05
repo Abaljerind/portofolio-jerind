@@ -18,3 +18,7 @@
 @utility title-heading {
   @apply mb-4 text-3xl font-bold text-[#373737] dark:text-white;
 }
+
+@utility certification-issued-provider {
+  @apply text-sm text-[#666666] md:text-base dark:text-[#c0c0c0];
+}
