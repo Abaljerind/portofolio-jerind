@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function Project() {
   return (
     <>
-      <div className="lg:px-2">
+      <section className="lg:px-2">
         <div className="title-about flex items-center justify-between px-6 py-5">
           <div className="flex items-center justify-between">
             <GrayCircle />
@@ -26,13 +26,13 @@ function Project() {
             inspire.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div className="p-2">
+      <section className="p-2">
         <div className="rounded-xl bg-[#F7F7F7] p-2 dark:bg-[#2C2C2C]">
           <ProjectCards />
         </div>
-      </div>
+      </section>
       <ContactSection />
       <Footer />
     </>
