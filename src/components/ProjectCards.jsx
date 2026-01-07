@@ -50,14 +50,14 @@ export default function ProjectCards() {
                 <p className="text-sm font-medium text-[#858585] md:text-sm dark:text-[#C0C0C0]">
                   {item.about}
                 </p>
-                <button className="mt-2 w-full cursor-pointer rounded-md bg-[#373737] px-3 py-2 font-semibold text-white dark:bg-white dark:text-[#373737]">
+                <button className="mt-2 w-full cursor-pointer rounded-md bg-[#373737] px-3 py-2 font-semibold text-white hover:bg-[#373737]/90 dark:bg-white dark:text-[#373737] hover:dark:bg-white/90">
                   View Details
                 </button>
               </div>
               <img
                 src={item.image}
                 alt={item.name}
-                className="mx-auto w-full rounded-t-lg object-cover"
+                className="mx-auto h-56 w-full rounded-t-lg object-cover object-top"
               />
             </div>
           );
