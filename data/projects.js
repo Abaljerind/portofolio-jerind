@@ -1,5 +1,6 @@
 export const projectList = [
   {
+    id: 1,
     name: "Browser Extensions Manager UI",
     image: "../images/projects/browser-extensions.webp",
     tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite, React Context, JSON",
@@ -8,6 +9,7 @@ export const projectList = [
       "A responsive UI for managing browser extensions, built as a solution to a Frontend Mentor challenge. All data is dynamically loaded from a local data.json file.",
   },
   {
+    id: 2,
     name: "Bookmark Landing Page",
     image: "../images/projects/bookmark-landing-page.webp",
     tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite",
@@ -16,6 +18,7 @@ export const projectList = [
       "A clean and responsive landing page built with React JS (Vite) and Tailwind CSS, inspired by modern bookmark manager apps.",
   },
   {
+    id: 3,
     name: "Easybank Landing Page",
     image: "../images/projects/easybank-landing-page.webp",
     tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite",
@@ -24,6 +27,7 @@ export const projectList = [
       "A clean and responsive landing page built with React JS (Vite) and Tailwind CSS, inspired by modern banking UI designs.",
   },
   {
+    id: 4,
     name: "Rest Countries API",
     image: "../images/projects/rest-countries-api.webp",
     tech: "HTML, TailwindCSS, JavaScript, NPM, REST API, React JS, Vite, React Context, React Router",
@@ -32,6 +36,7 @@ export const projectList = [
       "A frontend web application that interacts with the REST Countries API to display useful information about countries around the world.",
   },
   {
+    id: 5,
     name: "NFT Marketplace Design",
     image: "../images/projects/cryptobase.webp",
     tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, REST API, Firebase",
@@ -40,6 +45,7 @@ export const projectList = [
       "A crypto watchlist web application built with React JS (Vite) and Tailwind CSS, featuring Firebase authentication and a Firestore database.",
   },
   {
+    id: 6,
     name: "Product List with Cart",
     image: "../images/projects/product-list-cart.webp",
     tech: "HTML, TailwindCSS, Vite, React JS, NPM, JSON",
@@ -48,6 +54,7 @@ export const projectList = [
       "A simple React app built with React JS (Vite) to display a list of products using a JSON file as the data source.",
   },
   {
+    id: 7,
     name: "Advice Generator",
     image: "../images/projects/advice-generator.webp",
     tech: "HTML, TailwindCSS, Vite, React JS, NPM, REST API",
@@ -56,6 +63,7 @@ export const projectList = [
       "A simple and interactive advice generator application built with React JS. This project fetches random advice using an API.",
   },
   {
+    id: 8,
     name: "Bookshelf Apps",
     image: "../images/projects/bookshelf-apps.webp",
     tech: "HTML, CSS, JavaScript, JSON, Local Storage",
@@ -64,6 +72,7 @@ export const projectList = [
       "A bookshelf web application that allows users to manage books they have read or plan to read. The application utilizes Web Storage (Local Storage) to persist book data directly in the browser.",
   },
   {
+    id: 9,
     name: "Todo Apps",
     image: "../images/projects/todo-apps.webp",
     tech: "HTML, CSS, JavaScript, JSON, Local Storage",
