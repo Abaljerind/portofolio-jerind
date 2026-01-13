@@ -50,9 +50,14 @@ export default function ProjectCards() {
                 <p className="text-sm font-medium text-[#858585] md:text-sm dark:text-[#C0C0C0]">
                   {item.about}
                 </p>
-                <button className="mt-2 w-full cursor-pointer rounded-md bg-[#373737] px-3 py-2 font-semibold text-white hover:bg-[#373737]/90 dark:bg-white dark:text-[#373737] hover:dark:bg-white/90">
-                  View Details
-                </button>
+                <div className="mt-4 flex gap-2.5">
+                  <button className="w-full cursor-pointer rounded-lg bg-[#373737] px-3 py-2 text-sm font-semibold text-white shadow-md hover:bg-[#373737]/90 lg:text-base dark:bg-white dark:text-[#373737] hover:dark:bg-white/90">
+                    View Details
+                  </button>
+                  <button className="w-full cursor-pointer rounded-lg bg-[#373737] px-3 py-2 text-sm font-semibold text-white shadow-md hover:bg-[#373737]/90 lg:text-base dark:bg-white dark:text-[#373737] hover:dark:bg-white/90">
+                    <a href={item.href}>Live Preview</a>
+                  </button>
+                </div>
               </div>
               <img
                 src={item.image}
