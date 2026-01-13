@@ -22,3 +22,7 @@
 @utility certification-issued-provider {
   @apply text-sm text-[#666666] md:text-base dark:text-[#c0c0c0];
 }
+
+@utility buttons-project {
+  @apply w-full cursor-pointer rounded-lg bg-[#373737] px-3 py-2 text-sm font-semibold text-white shadow-md hover:bg-[#373737]/90 lg:text-base dark:bg-white dark:text-[#373737] hover:dark:bg-white/90;
+}
