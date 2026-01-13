@@ -11,10 +11,7 @@ const ProjectDetail = () => {
 
   /*
     TODO:
-    ! tambah di projects My role
-    ! tambah di projects Fitur yang tersedia
     ! kasih style untuk Tech yang digunakan sama dengan komponen MySkills
-    ! tambah di projects link ke github
     ! tambah tag a di button untuk ke github nya.
      */
   return (
