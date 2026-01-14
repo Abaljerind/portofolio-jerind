@@ -3,7 +3,16 @@ export const projectList = [
     id: 1,
     name: "Browser Extensions Manager UI",
     image: "../images/projects/browser-extensions.webp",
-    tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite, React Context, JSON",
+    tech: [
+      "HTML",
+      "TailwindCSS",
+      "JavaScript",
+      "NPM",
+      "React JS",
+      "Vite",
+      "React Context",
+      "JSON",
+    ],
     href: "https://browser-extensions-manager-ui-jerind.netlify.app/",
     repo: "https://github.com/Abaljerind/browser-extensions-manager-ui",
     about:
@@ -23,7 +32,7 @@ export const projectList = [
     id: 2,
     name: "Bookmark Landing Page",
     image: "../images/projects/bookmark-landing-page.webp",
-    tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite",
+    tech: ["HTML", "TailwindCSS", "JavaScript", "NPM", "React JS", "Vite"],
     href: "https://bookmark-landing-page-one-coral.vercel.app/",
     repo: "https://github.com/Abaljerind/bookmark-landing-page",
     about:
@@ -41,7 +50,7 @@ export const projectList = [
     id: 3,
     name: "Easybank Landing Page",
     image: "../images/projects/easybank-landing-page.webp",
-    tech: "HTML, TailwindCSS, JavaScript, NPM, React JS, Vite",
+    tech: ["HTML", "TailwindCSS", "JavaScript", "NPM", "React JS", "Vite"],
     href: "https://easybank-landing-page-peach-seven.vercel.app/",
     repo: "https://github.com/Abaljerind/easybank-landing-page",
     about:
@@ -57,7 +66,17 @@ export const projectList = [
     id: 4,
     name: "Rest Countries API",
     image: "../images/projects/rest-countries-api.webp",
-    tech: "HTML, TailwindCSS, JavaScript, NPM, REST API, React JS, Vite, React Context, React Router",
+    tech: [
+      "HTML",
+      "TailwindCSS",
+      "JavaScript",
+      "NPM",
+      "REST API",
+      "React JS",
+      "Vite",
+      "React Context",
+      "React Router",
+    ],
     href: "https://rest-countries-api-three-neon.vercel.app/",
     repo: "https://github.com/Abaljerind/rest-countries-api",
     about:
@@ -70,14 +89,23 @@ export const projectList = [
       "Navigate to border countries directly from the country detail page",
       "Toggle between light and dark mode for better accessibility and user preference",
     ],
-    myrole:
+    myRole:
       "I was responsible for architecting and developing the front-end using React, including data fetching, state management, and routing. I implemented search and region filtering with optimized rendering, dynamic country detail pages with border country navigation, and a global light/dark theme using persisted state. I focused on building a responsive, accessible UI with clear interaction states and efficient data handling to ensure a smooth user experience.",
   },
   {
     id: 5,
     name: "NFT Marketplace Design",
     image: "../images/projects/cryptobase.webp",
-    tech: "HTML, TailwindCSS, Vite, React JS, NPM, AXIOS, REST API, Firebase",
+    tech: [
+      "HTML",
+      "TailwindCSS",
+      "Vite",
+      "React JS",
+      "NPM",
+      "AXIOS",
+      "REST API",
+      "Firebase",
+    ],
     href: "https://cryptobase-010325.web.app/",
     repo: "https://github.com/Abaljerind/crypto-project",
     about:
@@ -96,7 +124,7 @@ export const projectList = [
     id: 6,
     name: "Product List with Cart",
     image: "../images/projects/product-list-cart.webp",
-    tech: "HTML, TailwindCSS, Vite, React JS, NPM, JSON",
+    tech: ["HTML", "TailwindCSS", "Vite", "React JS", "NPM", "JSON"],
     href: "https://product-list-with-card-chi.vercel.app/",
     repo: "https://github.com/Abaljerind/product-list-with-card",
     about:
@@ -109,14 +137,14 @@ export const projectList = [
       "View the optimal layout depending on the device’s screen size",
       "See hover and focus states for all interactive elements",
     ],
-    myrole:
+    myRole:
       "Frontend Developer who built a dynamic product list with cart functionality, managed application state, and ensured accessibility and responsive design.",
   },
   {
     id: 7,
     name: "Advice Generator",
     image: "../images/projects/advice-generator.webp",
-    tech: "HTML, TailwindCSS, Vite, React JS, NPM, REST API",
+    tech: ["HTML", "TailwindCSS", "Vite", "React JS", "NPM", "REST API"],
     href: "https://advice-generator-app-chi-six.vercel.app/",
     repo: "https://github.com/Abaljerind/advice-generator-app",
     about:
@@ -126,14 +154,14 @@ export const projectList = [
       "See hover states for all interactive elements on the page",
       "Generate a new piece of advice by clicking the dice icon",
     ],
-    myrole:
+    myRole:
       "Front-end Developer responsible for building the UI, handling API requests, and implementing interactive states",
   },
   {
     id: 8,
     name: "Bookshelf Apps",
     image: "../images/projects/bookshelf-apps.webp",
-    tech: "HTML, CSS, JavaScript, JSON, Local Storage",
+    tech: ["HTML", "CSS", "JavaScript", "JSON", "Local Storage"],
     href: "https://bookshelf-apps-sable.vercel.app/",
     repo: "https://github.com/Abaljerind/bookshelf-apps",
     about:
@@ -151,7 +179,7 @@ export const projectList = [
     id: 9,
     name: "Todo Apps",
     image: "../images/projects/todo-apps.webp",
-    tech: "HTML, CSS, JavaScript, JSON, Local Storage",
+    tech: ["HTML", "CSS", "JavaScript", "JSON", "Local Storage"],
     href: "https://todo-apps-seven.vercel.app/",
     repo: "https://github.com/Abaljerind/todo-apps",
     about:
@@ -163,7 +191,7 @@ export const projectList = [
       "Interactive UI with real-time state updates",
       "Clean and accessible user interface",
     ],
-    myrole:
+    myRole:
       "Sole developer responsible for designing the UI, implementing application logic, managing data persistence using Local Storage, and ensuring responsive layout across devices.",
   },
 ];
