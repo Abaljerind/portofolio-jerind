@@ -1,6 +1,7 @@
 import { Link, ScrollRestoration, useParams } from "react-router-dom";
 import { projectList } from "../../data/projects";
 import { IoMdArrowBack } from "react-icons/io";
+import { MdCheckBoxOutlineBlank } from "react-icons/md";
 
 const ProjectDetail = () => {
   const params = useParams();
@@ -11,50 +12,70 @@ const ProjectDetail = () => {
 
   /*
     TODO:
-    ! kasih style untuk Tech yang digunakan sama dengan komponen MySkills
-    ! tambah tag a di button untuk ke github nya.
+    ! kasih style untuk tablet dan desktop width
      */
   return (
     <section className="">
       <ScrollRestoration />
-      <header className="">
+      <header className="space-y-4">
         <Link to="/project">
-          <IoMdArrowBack className="my-2 size-6 cursor-pointer" />
+          <IoMdArrowBack className="mt-2 ml-2 size-6 cursor-pointer" />
         </Link>
-        <img src={detail?.image} alt={detail?.name} />
-        <div className="">
-          <h1 className="">{detail?.name}</h1>
-          <p className="">{detail?.about}</p>
+        <img
+          src={detail?.image}
+          alt={detail?.name}
+          className="mt-2 mb-4 rounded-md object-cover"
+        />
+        <div className="space-y-2 p-2">
+          <h1 className="text-lg font-bold">{detail?.name}</h1>
+          <p className="text-sm">{detail?.about}</p>
         </div>
       </header>
 
-      <main className="">
-        <div className="">
-          <h2 className="">My Role</h2>
-          <p className="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
-            laudantium qui quis deserunt dignissimos a obcaecati autem doloribus
-            alias cupiditate.
-          </p>
+      <main className="space-y-4 p-2">
+        <div className="space-y-2">
+          <h2 className="text-lg font-bold">My Role</h2>
+          <p className="text-sm">{detail?.myRole}</p>
         </div>
 
-        <div className="">
-          <h2 className="">Key Features</h2>
-          <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+        <div className="space-y-2">
+          <h2 className="text-lg font-bold">Key Features</h2>
+          <ul className="space-y-1.5">
+            {detail?.features.map((item, index) => {
+              return (
+                <li className="flex items-start gap-2 text-sm" key={index + 1}>
+                  <span className="">
+                    <MdCheckBoxOutlineBlank className="mt-0.5 size-4 text-gray-400" />
+                  </span>
+                  {item}
+                </li>
+              );
+            })}
           </ul>
         </div>
 
-        <div className="">
-          <h2 className="">Technologies Used</h2>
-          <p className="">{detail?.tech}</p>
+        <div className="mb-6">
+          <h2 className="mb-4 text-lg font-bold">Technologies Used</h2>
+          <ul className="flex flex-wrap gap-3">
+            {detail?.tech.map((item, index) => {
+              return (
+                <li
+                  className="cursor-pointer rounded-lg bg-white px-4 py-2 text-center text-sm font-medium shadow-md transition-all duration-300 hover:scale-110 dark:bg-[#373737] dark:text-white"
+                  key={index + 1}
+                >
+                  {item}
+                </li>
+              );
+            })}
+          </ul>
         </div>
 
         <div className="mt-4 flex gap-2.5">
-          <button className="buttons-project">View GitHub Repository</button>
+          <button className="buttons-project">
+            <a href={detail?.repo} target="_blank">
+              View GitHub Repository
+            </a>
+          </button>
           <button className="buttons-project">
             <a href={detail?.href} target="_blank">
               Live Preview
