@@ -19,20 +19,20 @@ const ProjectDetail = () => {
       <ScrollRestoration />
       <header className="space-y-4">
         <Link to="/project">
-          <IoMdArrowBack className="mt-2 ml-2 size-6 cursor-pointer" />
+          <IoMdArrowBack className="mt-2 ml-2 size-6 cursor-pointer dark:text-white" />
         </Link>
         <img
           src={detail?.image}
           alt={detail?.name}
           className="mt-2 mb-4 rounded-md object-cover"
         />
-        <div className="space-y-2 p-2">
+        <div className="space-y-2 p-2 dark:text-white">
           <h1 className="text-lg font-bold">{detail?.name}</h1>
           <p className="text-sm">{detail?.about}</p>
         </div>
       </header>
 
-      <main className="space-y-4 p-2">
+      <main className="space-y-4 p-2 dark:text-white">
         <div className="space-y-2">
           <h2 className="text-lg font-bold">My Role</h2>
           <p className="text-sm">{detail?.myRole}</p>
@@ -45,7 +45,7 @@ const ProjectDetail = () => {
               return (
                 <li className="flex items-start gap-2 text-sm" key={index + 1}>
                   <span className="">
-                    <MdCheckBoxOutlineBlank className="mt-0.5 size-4 text-gray-400" />
+                    <MdCheckBoxOutlineBlank className="mt-0.5 size-4 text-gray-400 dark:text-white" />
                   </span>
                   {item}
                 </li>
