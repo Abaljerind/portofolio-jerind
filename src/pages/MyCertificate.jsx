@@ -25,7 +25,7 @@ const MyCertificate = () => {
           </div>
         </header>
 
-        <section className="my-projects flex flex-col px-4">
+        <section className="my-projects flex flex-col px-4 lg:px-6">
           <h2 className="mb-4 text-3xl font-bold text-[#373737] md:mt-4 md:mb-6 md:text-4xl dark:text-white">
             My Certifications
           </h2>
