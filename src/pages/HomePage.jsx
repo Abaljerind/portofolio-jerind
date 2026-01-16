@@ -8,12 +8,23 @@ import Footer from "../components/Footer";
 import { motion } from "motion/react";
 
 function HomePage() {
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const fadeRight = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ ease: "easeOut", duration: 1 }}
+      <motion.header
+        variants={fadeRight}
+        initial="hidden"
+        animate="visible"
+        transition={{ ease: "easeOut", duration: 0.8 }}
         className="lg:px-2"
       >
         {/* header */}
@@ -54,12 +65,18 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </motion.div>
+      </motion.header>
 
       {/* projects */}
-      <div className="mt-12 px-2">
+      <section className="mt-12 px-2">
         <div className="rounded-xl bg-[#F7F7F7] px-2 py-2 dark:bg-[#2C2C2C]">
-          <div className="title-project flex justify-between">
+          <motion.div
+            variants={fadeLeft}
+            initial="hidden"
+            animate="visible"
+            transition={{ ease: "easeOut", duration: 0.8 }}
+            className="title-project flex justify-between"
+          >
             <div className="flex items-center justify-center pl-2">
               <GrayCircle />
               <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
@@ -67,11 +84,11 @@ function HomePage() {
               </p>
             </div>
             <ViewAll />
-          </div>
+          </motion.div>
 
           <ProjectCards />
         </div>
-      </div>
+      </section>
 
       {/* contact */}
       <ContactSection />
