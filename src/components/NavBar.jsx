@@ -3,6 +3,7 @@ import NavItems from "./NavItems";
 import HireMe from "./HireMe";
 import { IoSunnyOutline } from "react-icons/io5";
 import { FaCloudMoon } from "react-icons/fa";
+import { motion } from "motion/react";
 
 export default function NavBar() {
   // Cek preferensi mode gelap dari localStorage atau OS
@@ -32,11 +33,21 @@ export default function NavBar() {
   return (
     <>
       <nav className="flex h-16 items-center gap-1 rounded-xl bg-white pr-2.5 pl-4 shadow-lg shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
-        <section className="left-side w-full">
+        <motion.section
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="left-side w-full"
+        >
           <NavItems />
-        </section>
+        </motion.section>
 
-        <section className="right-side w-full">
+        <motion.section
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="right-side w-full"
+        >
           <ul className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8">
             <li
               className="group relative cursor-pointer"
@@ -55,7 +66,7 @@ export default function NavBar() {
               <HireMe />
             </li>
           </ul>
-        </section>
+        </motion.section>
       </nav>
     </>
   );
