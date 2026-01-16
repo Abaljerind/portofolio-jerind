@@ -12,6 +12,7 @@ import { SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaFire } from "react-icons/fa";
 import { FaFigma, FaGithub, FaLinux } from "react-icons/fa6";
+import { BiLogoTypescript } from "react-icons/bi";
 
 function About() {
   const skillList = [
@@ -29,6 +30,11 @@ function About() {
       skill: "JavaScript",
       icon: <IoLogoJavascript />,
       color: "#F7DF1E",
+    },
+    {
+      skill: "TypeScript",
+      icon: <BiLogoTypescript />,
+      color: "#3178C6",
     },
     {
       skill: "Tailwind CSS",
