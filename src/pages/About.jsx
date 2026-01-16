@@ -8,7 +8,7 @@ import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import GrayCircle from "../components/GrayCircle";
 import MySkills from "../components/MySkills";
-import { SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
+import { SiFramer, SiReactrouter, SiTailwindcss, SiVite } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { FaFire } from "react-icons/fa";
 import { FaFigma, FaGithub, FaLinux } from "react-icons/fa6";
@@ -40,6 +40,11 @@ function About() {
       skill: "Tailwind CSS",
       icon: <SiTailwindcss />,
       color: "#38B2AC",
+    },
+    {
+      skill: "Framer Motion",
+      icon: <SiFramer />,
+      color: "#FFF312",
     },
     {
       skill: "React JS",
