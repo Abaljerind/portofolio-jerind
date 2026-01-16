@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { projectList } from "../../data/projects";
+import { motion } from "motion/react";
 
 export default function ProjectCards() {
   const projectsList = projectList;
@@ -7,12 +8,27 @@ export default function ProjectCards() {
   const filteredProjectList =
     location.pathname === "/project" ? projectsList : projectsList.slice(0, 3);
 
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -150 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
     <>
       <section className="projects mt-1 grid gap-8 rounded-xl p-1.5">
         {filteredProjectList.map((item, index) => {
           return (
-            <div
+            <motion.div
+              variants={fadeLeft}
+              initial="hidden"
+              whileInView="visible"
+              transition={{
+                ease: "easeOut",
+                duration: 0.8,
+                delay: index * 0.2,
+                staggerChildren: 0.5,
+              }}
+              viewport={{ once: true }}
               className="flex flex-col-reverse gap-4 rounded-xl bg-white shadow-md dark:bg-[#373737]"
               key={index + 1}
             >
@@ -39,7 +55,7 @@ export default function ProjectCards() {
                 alt={item.name}
                 className="mx-auto h-56 w-full rounded-t-lg object-cover object-top"
               />
-            </div>
+            </motion.div>
           );
         })}
       </section>
