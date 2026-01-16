@@ -19,7 +19,10 @@ export default function SocialMediaList({ social, color, index }) {
       }}
       className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#e4e4e4] dark:duration-initial dark:hover:bg-[#414141]"
     >
-      <a
+      <motion.a
+        whileHover={{ scale: 1.15 }}
+        transition={{ duration: 0.2 }}
+        whileTap={{ scale: 0.95 }}
         className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg text-white shadow-sm"
         href={social.href}
         target="_blank"
@@ -31,7 +34,7 @@ export default function SocialMediaList({ social, color, index }) {
         >
           {social.img}
         </span>
-      </a>
+      </motion.a>
     </motion.div>
   );
 }
