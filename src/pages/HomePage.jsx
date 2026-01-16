@@ -5,11 +5,17 @@ import ViewAll from "../components/ViewAll";
 import ProjectCards from "../components/ProjectCards";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import { motion } from "motion/react";
 
 function HomePage() {
   return (
     <>
-      <div className="lg:px-2">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        className="lg:px-2"
+      >
         {/* header */}
         <div className="title-biodata flex items-center justify-between px-6 py-5">
           <div className="flex items-center justify-between">
@@ -48,7 +54,7 @@ function HomePage() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* projects */}
       <div className="mt-12 px-2">
