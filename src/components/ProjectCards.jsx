@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigationType } from "react-router-dom";
 import { projectList } from "../../data/projects";
 import { motion } from "motion/react";
 
@@ -7,6 +7,8 @@ export default function ProjectCards() {
   const location = useLocation();
   const filteredProjectList =
     location.pathname === "/project" ? projectsList : projectsList.slice(0, 3);
+
+  const navigationType = useNavigationType();
 
   const fadeLeft = {
     hidden: { opacity: 0, x: -150 },
@@ -20,7 +22,7 @@ export default function ProjectCards() {
           return (
             <motion.div
               variants={fadeLeft}
-              initial="hidden"
+              initial={navigationType === "POP" ? false : "hidden"}
               whileInView="visible"
               transition={{
                 ease: "easeOut",
