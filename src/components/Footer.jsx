@@ -31,11 +31,6 @@ export default function Footer() {
     visible: { opacity: 1, x: 0 },
   };
 
-  const fadeBottom = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
     <footer className="mt-12 px-2">
       <div className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4 dark:bg-[#2C2C2C]">
@@ -68,10 +63,10 @@ export default function Footer() {
 
       <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]">
         <motion.p
-          variants={fadeBottom}
+          variants={fadeLeft}
           initial="hidden"
           whileInView="visible"
-          transition={{ duration: 0.8, delay: 0.35 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center text-sm font-medium text-[#787878] md:text-[16px] dark:text-[#C0C0C0]"
         >
