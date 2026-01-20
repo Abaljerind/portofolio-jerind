@@ -36,7 +36,7 @@ export default function NavBar() {
         <motion.section
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 1 }}
+          transition={{ ease: "easeOut", duration: 0.8 }}
           className="left-side w-full"
         >
           <NavItems />
@@ -45,7 +45,7 @@ export default function NavBar() {
         <motion.section
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 1 }}
+          transition={{ ease: "easeOut", duration: 0.8 }}
           className="right-side w-full"
         >
           <ul className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8">
