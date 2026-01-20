@@ -1,10 +1,11 @@
-import { Link, ScrollRestoration, useParams } from "react-router-dom";
+import { ScrollRestoration, useNavigate, useParams } from "react-router-dom";
 import { projectList } from "../../data/projects";
 import { IoMdArrowBack } from "react-icons/io";
 import { MdCheckBoxOutlineBlank } from "react-icons/md";
 
 const ProjectDetail = () => {
   const params = useParams();
+  const navigate = useNavigate();
 
   const detail = projectList.find(
     (project) => project.id === Number(params.id),
@@ -14,9 +15,9 @@ const ProjectDetail = () => {
     <section className="">
       <ScrollRestoration />
       <header className="space-y-4">
-        <Link to="/project">
+        <button onClick={() => navigate(-1)}>
           <IoMdArrowBack className="mt-2 ml-2 size-6 cursor-pointer dark:text-white" />
-        </Link>
+        </button>
         <img
           src={detail?.image}
           alt={detail?.name}
