@@ -1,24 +1,8 @@
 import { motion } from "motion/react";
 
-export default function SocialMediaList({ social, color, index }) {
-  const fadeRight = {
-    hidden: { opacity: 0, x: 200 },
-    visible: { opacity: 1, x: 0 },
-  };
-
+export default function SocialMediaList({ social, color }) {
   return (
-    <motion.div
-      variants={fadeRight}
-      initial="hidden"
-      whileInView="visible"
-      transition={{
-        ease: "easeIn",
-        duration: 0.8,
-        delay: index * 0.2,
-        staggerChildren: 0.1,
-      }}
-      className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#e4e4e4] dark:duration-initial dark:hover:bg-[#414141]"
-    >
+    <div className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#e4e4e4] dark:duration-initial dark:hover:bg-[#414141]">
       <motion.a
         whileHover={{ scale: 1.15 }}
         transition={{ duration: 0.2 }}
@@ -35,6 +19,6 @@ export default function SocialMediaList({ social, color, index }) {
           {social.img}
         </span>
       </motion.a>
-    </motion.div>
+    </div>
   );
 }

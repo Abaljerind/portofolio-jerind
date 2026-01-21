@@ -47,7 +47,14 @@ export default function Footer() {
             Follow Me
           </p>
         </motion.div>
-        <div className="right-side flex items-center justify-center gap-1">
+        <motion.div
+          variants={fadeLeft}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="right-side flex items-center justify-center gap-1"
+        >
           {socialMediaList.map((social, index) => {
             return (
               <SocialMediaList
@@ -58,7 +65,7 @@ export default function Footer() {
               />
             );
           })}
-        </div>
+        </motion.div>
       </div>
 
       <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]">

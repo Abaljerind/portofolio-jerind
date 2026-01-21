@@ -2,14 +2,14 @@ import Buttons from "./Buttons";
 import { motion } from "motion/react";
 
 export default function ContactSection() {
-  const fadeRight = {
-    hidden: { opacity: 0, x: 100 },
+  const fadeLeft = {
+    hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0 },
   };
 
   return (
     <motion.section
-      variants={fadeRight}
+      variants={fadeLeft}
       initial="hidden"
       whileInView="visible"
       transition={{ duration: 0.8 }}
