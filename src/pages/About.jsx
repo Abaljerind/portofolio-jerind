@@ -13,6 +13,7 @@ import { RiReactjsFill } from "react-icons/ri";
 import { FaFire } from "react-icons/fa";
 import { FaFigma, FaGithub, FaLinux } from "react-icons/fa6";
 import { BiLogoTypescript } from "react-icons/bi";
+import { motion } from "motion/react";
 
 function About() {
   const skillList = [
@@ -88,24 +89,68 @@ function About() {
     },
   ];
 
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const itemSkill = {
+    hidden: { opacity: 0, scale: 0.8, y: 20 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
-      <div className="px-2">
+      <div>
         {/* header */}
-        <div className="title-about flex items-center justify-between px-4 py-5 lg:px-6">
-          <div className="flex items-center justify-between">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="title-about flex items-center justify-between px-4 py-5 lg:px-6"
+        >
+          <motion.div
+            variants={item}
+            className="flex items-center justify-between"
+          >
             <GrayCircle />
             <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
               About
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* profile */}
-        <div className="profile mt-2 flex flex-col px-4 lg:px-6">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="profile mt-2 flex flex-col px-4 lg:px-6"
+        >
           <div className="mb-10 flex flex-col items-center gap-1.5">
             {/* image */}
-            <div className="selfie mb-1.5 flex items-center justify-center md:mb-2">
+            <motion.div
+              variants={item}
+              className="selfie mb-1.5 flex items-center justify-center md:mb-2"
+            >
               <div className="outer-circle flex h-[185px] w-[185px] items-center justify-center rounded-full bg-[#F7F7F7] md:h-[230px] md:w-[230px] dark:border dark:border-[#3D3D3D] dark:bg-[#2C2C2C]">
                 <img
                   src="../images/myself.webp"
@@ -113,60 +158,101 @@ function About() {
                   className="h-40 w-40 rounded-full bg-[#D8D8DA] object-contain md:h-52 md:w-52"
                 />
               </div>
-            </div>
+            </motion.div>
             {/* ./ image */}
-            <h1 className="text-3xl font-bold text-[#373737] dark:text-white">
+            <motion.h1
+              variants={item}
+              className="text-3xl font-bold text-[#373737] dark:text-white"
+            >
               AbalJerind
-            </h1>
-            <p className="bio">Frontend Developer</p>
-            <p className="bio">Jakarta, ID</p>
+            </motion.h1>
+            <motion.p variants={item} className="bio">
+              Frontend Developer
+            </motion.p>
+            <motion.p variants={item} className="bio">
+              Jakarta, ID
+            </motion.p>
           </div>
 
-          <h2 className="title-heading">Introduction</h2>
-          <p className="information">
-            I'm AbalJerind, a frontend web developer currently residing in
-            Jakarta, Indonesia. I have a deep passion for crafting responsive,
-            user-friendly and accessible web interfaces. My main goal is to
-            bridge the gap between design and functionality, ensuring that users
-            have a smooth and enjoyable experience across all devices.
-          </p>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+          >
+            <motion.h2 variants={item} className="title-heading">
+              Introduction
+            </motion.h2>
+            <motion.p variants={item} className="information">
+              I'm AbalJerind, a frontend web developer currently residing in
+              Jakarta, Indonesia. I have a deep passion for crafting responsive,
+              user-friendly and accessible web interfaces. My main goal is to
+              bridge the gap between design and functionality, ensuring that
+              users have a smooth and enjoyable experience across all devices.
+            </motion.p>
+          </motion.div>
 
-          <h2 className="title-heading">Biography</h2>
-          <p className="information">
-            I have a bachelor’s degree in Informatics Engineering from Gunadarma
-            University in Depok, Indonesia. I love keeping up with the latest
-            technologies, learning through online courses and projects, and have
-            experience working with APIs, turning Figma designs into
-            pixel-perfect code, and ensuring smooth cross-browser performance.
-            Outside of coding, I recharge by playing video games, watching
-            movies, and exercising on weekends—all of which help me stay
-            creative, focused, and energized for new challenges.
-          </p>
-        </div>
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-80px" }}
+          >
+            <motion.h2 variants={item} className="title-heading">
+              Biography
+            </motion.h2>
+            <motion.p variants={item} className="information">
+              I have a bachelor’s degree in Informatics Engineering from
+              Gunadarma University in Depok, Indonesia. I love keeping up with
+              the latest technologies, learning through online courses and
+              projects, and have experience working with APIs, turning Figma
+              designs into pixel-perfect code, and ensuring smooth cross-browser
+              performance. Outside of coding, I recharge by playing video games,
+              watching movies, and exercising on weekends—all of which help me
+              stay creative, focused, and energized for new challenges.
+            </motion.p>
+          </motion.div>
+        </motion.div>
 
-        <div className="skills lg:px-2">
-          <h2 className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-80px" }}
+          className="skills lg:px-2"
+        >
+          <motion.h2
+            variants={item}
+            className="mb-4 px-4 text-3xl font-bold text-[#373737] dark:text-white"
+          >
             My Skills
-          </h2>
-          <p className="information px-4 lg:mb-7">
+          </motion.h2>
+          <motion.p variants={item} className="information px-4 lg:mb-7">
             I continuously refine my skills through hands-on practice and
             real-world challenges. Take a look — I hope you’ll find them
             impressive!
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="flex flex-wrap gap-2 rounded-xl bg-[#F7F7F7] p-4 dark:bg-[#2C2C2C]">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-2 rounded-xl bg-[#F7F7F7] p-4 dark:bg-[#2C2C2C]"
+        >
           {skillList.map((item, index) => {
             return (
-              <MySkills
-                key={index + 1}
-                skill={item.skill}
-                icon={item.icon}
-                color={item.color}
-              />
+              <motion.div key={index + 1} variants={itemSkill}>
+                <MySkills
+                  skill={item.skill}
+                  icon={item.icon}
+                  color={item.color}
+                />
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
 
       <ContactSection />
