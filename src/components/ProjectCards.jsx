@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { projectList } from "../../data/projects";
+import { motion } from "motion/react";
 
 export default function ProjectCards() {
   const projectsList = projectList;
@@ -7,16 +8,38 @@ export default function ProjectCards() {
   const filteredProjectList =
     location.pathname === "/project" ? projectsList : projectsList.slice(0, 3);
 
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, delay: 0.2, ease: "easeOut" },
+    },
+  };
+
   return (
     <>
       <section className="projects mt-1 grid gap-8 rounded-xl p-1.5">
         {filteredProjectList.map((item, index) => {
           return (
-            <div
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-200px" }}
               className="flex flex-col-reverse gap-4 rounded-xl bg-white shadow-md dark:bg-[#373737]"
               key={index + 1}
             >
-              <div className="space-y-2 p-2.5">
+              <motion.div variants={itemVariants} className="space-y-2 p-2.5">
                 <h4 className="cursor-pointer font-semibold text-[#373737] md:text-lg dark:text-white">
                   {item.name}
                 </h4>
@@ -27,19 +50,21 @@ export default function ProjectCards() {
                   <Link to={`/project/${item.id}`} className="buttons-project">
                     View Details
                   </Link>
+
                   <button className="buttons-project">
                     <a href={item.href} target="_blank">
                       Live Preview
                     </a>
                   </button>
                 </div>
-              </div>
-              <img
+              </motion.div>
+              <motion.img
+                variants={itemVariants}
                 src={item.image}
                 alt={item.name}
                 className="mx-auto h-56 w-full rounded-t-lg object-cover object-top"
               />
-            </div>
+            </motion.div>
           );
         })}
       </section>
