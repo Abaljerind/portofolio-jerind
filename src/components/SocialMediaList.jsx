@@ -1,12 +1,34 @@
 import { motion } from "motion/react";
 
 export default function SocialMediaList({ social, color }) {
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
-    <div className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#e4e4e4] dark:duration-initial dark:hover:bg-[#414141]">
+    <motion.div
+      variants={container}
+      initial="hidden"
+      whileInView="visible"
+      animate={{ once: true }}
+      className="group flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition duration-500 hover:bg-[#e4e4e4] dark:duration-initial dark:hover:bg-[#414141]"
+    >
       <motion.a
-        whileHover={{ scale: 1.15 }}
-        transition={{ duration: 0.2 }}
-        whileTap={{ scale: 0.95 }}
+        variants={item}
         className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-lg text-white shadow-sm"
         href={social.href}
         target="_blank"
@@ -19,6 +41,6 @@ export default function SocialMediaList({ social, color }) {
           {social.img}
         </span>
       </motion.a>
-    </div>
+    </motion.div>
   );
 }
