@@ -51,19 +51,15 @@ export default function NavBar() {
   return (
     <>
       <nav className="flex h-16 items-center gap-1 rounded-xl bg-white pr-2.5 pl-4 shadow-lg shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
-        <motion.section
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="left-side w-full"
-        >
-          <motion.div variants={item}>
+        <section className="left-side w-full">
+          <div>
             <NavItems />
-          </motion.div>
-        </motion.section>
+          </div>
+        </section>
 
         <section className="right-side w-full">
           <motion.ul
+            variants={container}
             initial="hidden"
             animate="visible"
             className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8"
