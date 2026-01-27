@@ -30,26 +30,46 @@ export default function NavBar() {
     }
   }, [darkModes]);
 
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
     <>
       <nav className="flex h-16 items-center gap-1 rounded-xl bg-white pr-2.5 pl-4 shadow-lg shadow-black/5 lg:pl-6 dark:border dark:border-[#3D3D3D] dark:bg-[#212121]">
         <motion.section
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 0.8 }}
+          variants={container}
+          initial="hidden"
+          animate="visible"
           className="left-side w-full"
         >
-          <NavItems />
+          <motion.div variants={item}>
+            <NavItems />
+          </motion.div>
         </motion.section>
 
-        <motion.section
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ ease: "easeOut", duration: 0.8 }}
-          className="right-side w-full"
-        >
-          <ul className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8">
-            <li
+        <section className="right-side w-full">
+          <motion.ul
+            initial="hidden"
+            animate="visible"
+            className="flex items-center justify-end gap-4 md:gap-6 lg:justify-end lg:gap-8"
+          >
+            <motion.li
+              variants={item}
               className="group relative cursor-pointer"
               onClick={() => setDarkModes(!darkModes)}
             >
@@ -61,12 +81,12 @@ export default function NavBar() {
               ) : (
                 <FaCloudMoon className="text-3xl text-[#373737] opacity-50 transition-all duration-300 group-hover:opacity-100 dark:text-white" />
               )}
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={item}>
               <HireMe />
-            </li>
-          </ul>
-        </motion.section>
+            </motion.li>
+          </motion.ul>
+        </section>
       </nav>
     </>
   );
