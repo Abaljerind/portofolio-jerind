@@ -26,20 +26,35 @@ export default function Footer() {
     },
   ];
 
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, x: 100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
     <footer className="mt-12 px-2">
-      <div className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4 dark:bg-[#2C2C2C]">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-80px" }}
+        className="social-media mb-2 flex justify-between rounded-xl bg-[#F7F7F7] px-2 py-4 dark:bg-[#2C2C2C]"
+      >
         <motion.div
-          variants={fadeLeft}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          variants={item}
           className="left-side flex items-center pl-2"
         >
           <GrayCircle />
@@ -48,11 +63,7 @@ export default function Footer() {
           </p>
         </motion.div>
         <motion.div
-          variants={fadeLeft}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          variants={item}
           className="right-side flex items-center justify-center gap-1"
         >
           {socialMediaList.map((social, index) => {
@@ -66,15 +77,17 @@ export default function Footer() {
             );
           })}
         </motion.div>
-      </div>
+      </motion.div>
 
-      <div className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]">
+      <motion.div
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-80px" }}
+        className="copyright rounded-xl bg-[#F7F7F7] px-4 py-6 dark:bg-[#2C2C2C]"
+      >
         <motion.p
-          variants={fadeLeft}
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          variants={item}
           className="text-center text-sm font-medium text-[#787878] md:text-[16px] dark:text-[#C0C0C0]"
         >
           &copy; 2025{" "}
@@ -105,7 +118,7 @@ export default function Footer() {
             Vite
           </a>
         </motion.p>
-      </div>
+      </motion.div>
     </footer>
   );
 }
