@@ -99,10 +99,10 @@ function About() {
   };
 
   const item = {
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: { duration: 0.6, ease: "easeOut" },
     },
   };
