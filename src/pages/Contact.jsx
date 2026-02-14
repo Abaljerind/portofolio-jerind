@@ -4,6 +4,7 @@ import GrayCircle from "../components/GrayCircle";
 import GreenCircle from "../components/GreenCircle";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
+import { motion } from "motion/react";
 
 function Contact() {
   const formSpreeID = import.meta.env.VITE_FORMSPREE_ID;
@@ -41,36 +42,79 @@ function Contact() {
     }
   }, [submitData.succeeded]);
 
+  const container = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
   return (
     <>
       <div className="lg:px-2">
-        <div className="title-contact flex items-center justify-between px-6 py-5">
-          <div className="flex items-center justify-between">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="title-contact flex items-center justify-between px-6 py-5"
+        >
+          <motion.div
+            variants={item}
+            className="flex items-center justify-between"
+          >
             <GrayCircle />
             <p className="text-lg font-semibold text-[#666666] md:text-xl dark:text-[#C0C0C0]">
               Hire Me
             </p>
-          </div>
-          <GreenCircle />
-        </div>
+          </motion.div>
+          <motion.div variants={item}>
+            <GreenCircle />
+          </motion.div>
+        </motion.div>
 
-        <div className="intro-contacts flex flex-col px-6 md:mt-4">
-          <h2 className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="intro-contacts flex flex-col px-6 md:mt-4"
+        >
+          <motion.h2
+            variants={item}
+            className="mb-4 text-3xl font-bold text-[#373737] md:text-4xl dark:text-white"
+          >
             Frontend Request
-          </h2>
-          <p className="mb-8 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]">
+          </motion.h2>
+          <motion.p
+            variants={item}
+            className="mb-8 text-[16px] leading-7 tracking-tight text-[#666666] md:text-lg dark:text-[#C0C0C0]"
+          >
             Have an idea and need a developer to bring your design to life?
             Reach out now
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         <div className="form px-6">
-          <form
+          <motion.form
+            variants={container}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             action=""
             onSubmit={handleForSubmit}
             className="flex flex-col gap-3"
           >
-            <div className="flex w-full gap-3">
+            <motion.div variants={item} className="flex w-full gap-3">
               <input
                 type="text"
                 name="name"
@@ -103,8 +147,9 @@ function Contact() {
                 field="email"
                 errors={submitData.errors}
               />
-            </div>
-            <textarea
+            </motion.div>
+            <motion.textarea
+              variants={item}
               name="message"
               id="message"
               placeholder="Message"
@@ -112,20 +157,21 @@ function Contact() {
               required
               value={formData.message}
               onChange={handleChange}
-            ></textarea>
+            ></motion.textarea>
             <ValidationError
               prefix="Message"
               field="message"
               errors={submitData.errors}
             />
 
-            <button
+            <motion.button
+              variants={item}
               type="submit"
               className="w-full cursor-pointer rounded-lg bg-black py-3 text-sm font-bold text-white duration-500 hover:opacity-80 dark:bg-[#383838] dark:hover:bg-[#424242]"
             >
               Submit
-            </button>
-          </form>
+            </motion.button>
+          </motion.form>
         </div>
       </div>
 
