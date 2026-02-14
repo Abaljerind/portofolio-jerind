@@ -8,20 +8,15 @@ import Footer from "../components/Footer";
 import { motion } from "motion/react";
 
 function HomePage() {
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0 },
-  };
-
-  const fadeRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
     <>
       <motion.header
-        variants={fadeRight}
+        variants={fadeUp}
         initial="hidden"
         animate="visible"
         transition={{ ease: "easeOut", duration: 0.8 }}
@@ -71,7 +66,7 @@ function HomePage() {
       <section className="mt-12 px-2">
         <div className="rounded-xl bg-[#F7F7F7] px-2 py-2 dark:bg-[#2C2C2C]">
           <motion.div
-            variants={fadeLeft}
+            variants={fadeUp}
             initial="hidden"
             animate="visible"
             transition={{ ease: "easeOut", duration: 0.8 }}
